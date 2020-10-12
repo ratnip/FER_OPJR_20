@@ -24,7 +24,7 @@
 <meta name="author" content="Damir Pintar" />
 
 
-<meta name="date" content="2020-09-30" />
+<meta name="date" content="2020-10-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +32,7 @@
   
   
 <link rel="prev" href="index.html"/>
-
+<link rel="next" href="tipovi.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -214,6 +214,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="1.4" data-path="introduction.html"><a href="introduction.html#how-to-use-this-coursebook"><i class="fa fa-check"></i><b>1.4</b> How to use this coursebook?</a></li>
 </ul></li>
+<li class="chapter" data-level="2" data-path="tipovi.html"><a href="tipovi.html"><i class="fa fa-check"></i><b>2</b> Basic data types and operators</a><ul>
+<li class="chapter" data-level="2.1" data-path="tipovi.html"><a href="tipovi.html#basic-data-types"><i class="fa fa-check"></i><b>2.1</b> Basic data types</a></li>
+<li class="chapter" data-level="2.2" data-path="tipovi.html"><a href="tipovi.html#operators"><i class="fa fa-check"></i><b>2.2</b> Operators</a></li>
+<li class="chapter" data-level="2.3" data-path="tipovi.html"><a href="tipovi.html#missing-unknown-and-non-existent-values"><i class="fa fa-check"></i><b>2.3</b> Missing, unknown, and non-existent values</a></li>
+<li class="chapter" data-level="" data-path="tipovi.html"><a href="tipovi.html#homework-exercises"><i class="fa fa-check"></i>Homework exercises</a></li>
+</ul></li>
 </ul>
 
       </nav>
@@ -383,10 +389,12 @@ Figure 1.4:  R Markdown document
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="introduction.html#cb3-1"></a><span class="co"># Make the following commands by removing the comment character</span></span>
 <span id="cb3-2"><a href="introduction.html#cb3-2"></a></span>
 <span id="cb3-3"><a href="introduction.html#cb3-3"></a><span class="co">#getwd() # current working directory</span></span>
-<span id="cb3-4"><a href="introduction.html#cb3-4"></a><span class="co">#setwd(&quot;.&quot;) # here we can specify a new working folder if desired - usually not a good idea when doing with RMD files</span></span></code></pre></div>
+<span id="cb3-4"><a href="introduction.html#cb3-4"></a><span class="co">#setwd(&quot;.&quot;) # here we can specify a new working folder if desired </span></span>
+<span id="cb3-5"><a href="introduction.html#cb3-5"></a>            <span class="co"># usually not a good idea when working with RMD files</span></span></code></pre></div>
 <div class="fold s o">
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="introduction.html#cb4-1"></a><span class="kw">getwd</span>() <span class="co"># directory in which we are currently working</span></span>
-<span id="cb4-2"><a href="introduction.html#cb4-2"></a><span class="kw">setwd</span>(<span class="st">&quot;.&quot;</span>) <span class="co"># here we can specify a new working folder if desired - usually not a good idea when doing with RMD files</span></span></code></pre></div>
+<span id="cb4-2"><a href="introduction.html#cb4-2"></a><span class="kw">setwd</span>(<span class="st">&quot;.&quot;</span>) <span class="co"># here we can specify a new working folder if desired </span></span>
+<span id="cb4-3"><a href="introduction.html#cb4-3"></a>           <span class="co"># usually not a good idea when working with RMD files </span></span></code></pre></div>
 </div>
 <hr />
 <p>The exercise will often be related to the most recently introduced concept. For example, we might be learning the assignment operator, and explaining that although language R supports the usage of <code>=</code> operator for assigning a value to a variable, it is recommended to use the <code>&lt;-</code> operator for that purpose, for various reasons to be explained later (use <code>ALT + -</code> to quickly write <code>&lt;-</code>). Also, note that R supports the so-called <em>autoprint</em> functionality, when a command or a set of commands is executed, the value of the last expression will be shown on screen. This means that if we create a new variable <code>x</code> and want to print it on the screen, we do not have to put <code>print(x)</code>as the last command, but rather just <code>x</code>. Also, using an assignment operator does not return a value in itself, which is why we do not see anything printed out on screen after assigning a value to a variable.</p>
@@ -412,8 +420,8 @@ Figure 1.4:  R Markdown document
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="tipovi.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
