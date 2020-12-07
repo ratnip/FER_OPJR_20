@@ -268,12 +268,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="7.1" data-path="user.html"><a href="user.html#user-defined-functions"><i class="fa fa-check"></i><b>7.1</b> User defined functions</a><ul>
 <li class="chapter" data-level="7.1.1" data-path="user.html"><a href="user.html#defining-a-new-function"><i class="fa fa-check"></i><b>7.1.1</b> Defining a new function</a></li>
 <li class="chapter" data-level="7.1.2" data-path="user.html"><a href="user.html#the-copy-on-modify-principle"><i class="fa fa-check"></i><b>7.1.2</b> The “copy-on-modify” principle</a></li>
-<li class="chapter" data-level="7.1.3" data-path="user.html"><a href="user.html#example-7.1---copy-on-modify"><i class="fa fa-check"></i><b>7.1.3</b> Example 7.1 - “copy-on-modify”</a></li>
-<li class="chapter" data-level="7.1.4" data-path="user.html"><a href="user.html#example-7.2---copy-on-modify-2"><i class="fa fa-check"></i><b>7.1.4</b> Example 7.2 - “copy-on-modify (2)”</a></li>
-<li class="chapter" data-level="7.1.5" data-path="user.html"><a href="user.html#example-7.3---copy-on-modify-and-environments"><i class="fa fa-check"></i><b>7.1.5</b> Example 7.3 - “copy-on-modify” and environments</a></li>
-<li class="chapter" data-level="7.1.6" data-path="user.html"><a href="user.html#example-7.4---the---operator"><i class="fa fa-check"></i><b>7.1.6</b> Example 7.4 - the <code>&lt;&lt;-</code> operator</a></li>
-<li class="chapter" data-level="7.1.7" data-path="user.html"><a href="user.html#example-7.5---changing-a-data-frame-column-with-the---operator"><i class="fa fa-check"></i><b>7.1.7</b> Example 7.5 - changing a data frame column with the <code>&lt;&lt;-</code> operator</a></li>
-<li class="chapter" data-level="7.1.8" data-path="user.html"><a href="user.html#function-as-an-object"><i class="fa fa-check"></i><b>7.1.8</b> Function as an object</a></li>
+<li class="chapter" data-level="7.1.3" data-path="user.html"><a href="user.html#function-as-an-object"><i class="fa fa-check"></i><b>7.1.3</b> Function as an object</a></li>
 </ul></li>
 <li class="chapter" data-level="7.2" data-path="user.html"><a href="user.html#the-apply-family"><i class="fa fa-check"></i><b>7.2</b> The <code>apply</code> family</a><ul>
 <li class="chapter" data-level="7.2.1" data-path="user.html"><a href="user.html#the-apply-function"><i class="fa fa-check"></i><b>7.2.1</b> The <code>apply</code> function</a></li>
@@ -456,9 +451,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>The language R uses a hybrid principle known as <em>copy-on-modify</em>. With this principle, references are forwarded to the function, which allows us to transmit “large” variables without the fear of them getting unnecessarily copied. But this is only valid if the function does not change the value of the resulting variables - at the moment when the function attempts to make any changes, copying the variable is carried out and the function continues to work on the copy.</p>
 <p>Let’s check the above statements in a following examples.</p>
 <hr />
-</div>
-<div id="example-7.1---copy-on-modify" class="section level3">
-<h3><span class="header-section-number">7.1.3</span> Example 7.1 - “copy-on-modify”</h3>
+<p><strong>Example 7.1 - “copy-on-modify”</strong></p>
 <div class="sourceCode" id="cb243"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb243-1"><a href="user.html#cb243-1"></a><span class="co"># creating a data frame</span></span>
 <span id="cb243-2"><a href="user.html#cb243-2"></a>df &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">id =</span> <span class="dv">1</span><span class="op">:</span><span class="dv">5</span>, <span class="dt">name =</span> LETTERS[<span class="dv">1</span><span class="op">:</span><span class="dv">5</span>])</span>
 <span id="cb243-3"><a href="user.html#cb243-3"></a></span>
@@ -479,9 +472,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 5  5    E</code></pre>
 <p>The function actually creates a new temporary environment within which it stores “local” variables. In the above example, a new copy of the column in question is created and changed - but the original data frame column is unchanged.</p>
 <p>It is important to note that the function could access an external variable even without sending it to the function, since by referencing the <code>x</code> variable that does not exist in the local environment the R search function will continue in the parent’s environment, which in this case would be the global environment. Attempting to change this variable would still fail - R would detect an attempt to change the variable and create a local copy of the same name.</p>
-</div>
-<div id="example-7.2---copy-on-modify-2" class="section level3">
-<h3><span class="header-section-number">7.1.4</span> Example 7.2 - “copy-on-modify (2)”</h3>
+<p><strong>Example 7.2 - “copy-on-modify (2)”</strong></p>
 <div class="sourceCode" id="cb245"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb245-1"><a href="user.html#cb245-1"></a><span class="co"># creating a data frame</span></span>
 <span id="cb245-2"><a href="user.html#cb245-2"></a>df &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">id =</span> <span class="dv">1</span><span class="op">:</span><span class="dv">5</span>, <span class="dt">name =</span> LETTERS[<span class="dv">1</span><span class="op">:</span><span class="dv">5</span>])</span>
 <span id="cb245-3"><a href="user.html#cb245-3"></a></span>
@@ -501,9 +492,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 5  5    E</code></pre>
 <hr />
 <p>One way to work around is is to wrap the data frame in its own environment. This way we can “force” the function to use <em>call-by-reference</em>, and at the same time ensure that no deep copies will be unnecessarily created.</p>
-</div>
-<div id="example-7.3---copy-on-modify-and-environments" class="section level3">
-<h3><span class="header-section-number">7.1.5</span> Example 7.3 - “copy-on-modify” and environments</h3>
+<p><strong>Example 7.3 - “copy-on-modify” and environments</strong></p>
 <div class="sourceCode" id="cb247"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb247-1"><a href="user.html#cb247-1"></a><span class="co"># creating a data frame in a new environment</span></span>
 <span id="cb247-2"><a href="user.html#cb247-2"></a>e &lt;-<span class="st"> </span><span class="kw">new.env</span>()</span>
 <span id="cb247-3"><a href="user.html#cb247-3"></a><span class="kw">parent.env</span>(e) &lt;-<span class="st"> </span><span class="kw">emptyenv</span>()</span>
@@ -525,9 +514,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 5  5       E</code></pre>
 <hr />
 <p>A simpler way of solving the above task would be using the <code>&lt;&lt;-</code> operator. This operator’s function is to change the variable of the given name that is located somewhere in the search path. R will follow the search path, and change the first occurrence of the specified variable. If the variable of this name does not exist anywhere in the search path, R will create a new variable in the first environment above the environment of the function.</p>
-</div>
-<div id="example-7.4---the---operator" class="section level3">
-<h3><span class="header-section-number">7.1.6</span> Example 7.4 - the <code>&lt;&lt;-</code> operator</h3>
+<p><strong>Example 7.4 - the <code>&lt;&lt;-</code> operator</strong></p>
 <div class="sourceCode" id="cb249"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb249-1"><a href="user.html#cb249-1"></a><span class="co"># operator `&lt;&lt;-`</span></span>
 <span id="cb249-2"><a href="user.html#cb249-2"></a>f &lt;-<span class="st"> </span><span class="cf">function</span>(x) {</span>
 <span id="cb249-3"><a href="user.html#cb249-3"></a>    x &lt;&lt;-<span class="st"> </span><span class="dv">7</span></span>
@@ -539,9 +526,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb249-9"><a href="user.html#cb249-9"></a>x</span></code></pre></div>
 <pre><code>## [1] 7</code></pre>
 <p>Let’s see how this would work with our data frame.</p>
-</div>
-<div id="example-7.5---changing-a-data-frame-column-with-the---operator" class="section level3">
-<h3><span class="header-section-number">7.1.7</span> Example 7.5 - changing a data frame column with the <code>&lt;&lt;-</code> operator</h3>
+<p><strong>Example 7.5 - changing a data frame column with the <code>&lt;&lt;-</code> operator</strong></p>
 <div class="sourceCode" id="cb251"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb251-1"><a href="user.html#cb251-1"></a><span class="co"># creating a data frame</span></span>
 <span id="cb251-2"><a href="user.html#cb251-2"></a>df &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">id =</span> <span class="dv">1</span><span class="op">:</span><span class="dv">5</span>, <span class="dt">name =</span> LETTERS[<span class="dv">1</span><span class="op">:</span><span class="dv">5</span>])</span>
 <span id="cb251-3"><a href="user.html#cb251-3"></a></span>
@@ -561,7 +546,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Finally, we must mention one feature of functions in R - the so-called. “lazy evaluation”. This simply means that R will not evaluate the received parameter until it is explicitly used. Up to that moment, this object is so-called. “promise” - R “knows” how to evaluate that object but it will not do so until it really needs it. This increases the efficiency of the language; if a parameter is used only in a conditional branch, then in scenarios when it is not needed it will not consume memory. But equally, we need to be careful because a lazy evaluation can lead to unexpected problems if we do not take into account its existence.</p>
 </div>
 <div id="function-as-an-object" class="section level3">
-<h3><span class="header-section-number">7.1.8</span> Function as an object</h3>
+<h3><span class="header-section-number">7.1.3</span> Function as an object</h3>
 <p>We have already said that R has good support for the so-called “functional programming” which represents a programming paradigm that puts emphasis on designing functions without reliance on objects with interchangeable states. One of the characteristics of such languages are “first class functions”, which means that the language supports the definition of functions in such a way that they are equal objects to all other types of objects - they can be stored in a variable, used as an input argument of another function or as a return value, stored in other data structures, etc.</p>
 <p>Let us show this on a trivial example. We know that R offers the function <code>sum</code> within the <code>base</code> package, and this function calculates the arithmetic sum of the vector elements we send to it as an input parameter. But <code>sum</code> is actually <em>the name of the variable</em> that references the code that implements this function. If we want, we can very easily bind this function to some other variable by which we have effectively changed its name, or - better said - provided an alternative way of calling from a completely different environment.</p>
 <div class="sourceCode" id="cb253"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb253-1"><a href="user.html#cb253-1"></a>sum2 &lt;-<span class="st"> </span>sum</span>
