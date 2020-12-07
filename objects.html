@@ -24,7 +24,7 @@
 <meta name="author" content="Damir Pintar" />
 
 
-<meta name="date" content="2020-11-19" />
+<meta name="date" content="2020-12-07" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +32,7 @@
   
   
 <link rel="prev" href="user.html"/>
-
+<link rel="next" href="pipe.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -291,6 +291,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="8.5" data-path="objects.html"><a href="objects.html#short-overview-of-s4-objects"><i class="fa fa-check"></i><b>8.5</b> Short overview of S4 objects</a></li>
 <li class="chapter" data-level="" data-path="tipovi.html"><a href="tipovi.html#homework-exercises"><i class="fa fa-check"></i>Homework exercises</a></li>
 </ul></li>
+<li class="part"><span><b>II Data management and visualizations</b></span></li>
+<li class="chapter" data-level="9" data-path="pipe.html"><a href="pipe.html"><i class="fa fa-check"></i><b>9</b> Pipeline operator and tidy data</a><ul>
+<li class="chapter" data-level="9.1" data-path="pipe.html"><a href="pipe.html#tidy-data"><i class="fa fa-check"></i><b>9.1</b> Tidy data</a><ul>
+<li class="chapter" data-level="9.1.1" data-path="pipe.html"><a href="pipe.html#the-pivot_longer-andpivot_wider-functions"><i class="fa fa-check"></i><b>9.1.1</b> The <code>pivot_longer</code> and<code>pivot_wider</code> functions</a></li>
+<li class="chapter" data-level="9.1.2" data-path="pipe.html"><a href="pipe.html#the-separate-and-unite-functions"><i class="fa fa-check"></i><b>9.1.2</b> The <code>separate</code> and <code>unite</code> functions</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="pipe.html"><a href="pipe.html#exercise-tasks"><i class="fa fa-check"></i>Exercise Tasks</a></li>
+</ul></li>
 </ul>
 
       </nav>
@@ -429,7 +437,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## function (object, ...) 
 ## standardGeneric(&quot;summary&quot;)
-## &lt;environment: 0x00000000188720b8&gt;
+## &lt;environment: 0x00000000145d2af0&gt;
 ## Methods may be defined for arguments: object
 ## Use  showMethods(&quot;summary&quot;)  for currently available ones.
 ## function (object, maxsum = 100L, ...) 
@@ -450,7 +458,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##         c(tt, `NA&#39;s` = sum(nas))
 ##     else tt
 ## }
-## &lt;bytecode: 0x000000002712b348&gt;
+## &lt;bytecode: 0x0000000022fee200&gt;
 ## &lt;environment: namespace:base&gt;</code></pre>
 </div>
 <div id="adding-generic-functions-to-an-object" class="section level2">
@@ -543,7 +551,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb310-12"><a href="objects.html#cb310-12"></a><span class="kw">print</span>(peter)</span></code></pre></div>
 <pre><code>## function (x, ...) 
 ## UseMethod(&quot;print&quot;)
-## &lt;bytecode: 0x0000000014c116b0&gt;
+## &lt;bytecode: 0x00000000114d30f0&gt;
 ## &lt;environment: namespace:base&gt;
 ## ID:12345678, surname:Parker, weight:78</code></pre>
 </div>
@@ -658,13 +666,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </div>
 </div>
+
+
+
             </section>
 
           </div>
         </div>
       </div>
-<a href="user.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="user.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="pipe.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
