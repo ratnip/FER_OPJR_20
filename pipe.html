@@ -24,7 +24,7 @@
 <meta name="author" content="Damir Pintar" />
 
 
-<meta name="date" content="2020-12-07" />
+<meta name="date" content="2020-12-14" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +32,7 @@
   
   
 <link rel="prev" href="objects.html"/>
-
+<link rel="next" href="dates.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -296,6 +296,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="" data-path="pipe.html"><a href="pipe.html#exercise-tasks"><i class="fa fa-check"></i>Exercise Tasks</a></li>
 </ul></li>
+<li class="chapter" data-level="10" data-path="dates.html"><a href="dates.html"><i class="fa fa-check"></i><b>10</b> Working with dates and character strings</a><ul>
+<li class="chapter" data-level="10.1" data-path="dates.html"><a href="dates.html#working-with-dates"><i class="fa fa-check"></i><b>10.1</b> Working with dates</a><ul>
+<li class="chapter" data-level="10.1.1" data-path="dates.html"><a href="dates.html#the-date-class"><i class="fa fa-check"></i><b>10.1.1</b> The <code>Date</code> class</a></li>
+<li class="chapter" data-level="10.1.2" data-path="dates.html"><a href="dates.html#theposixct-andposixlt-classes"><i class="fa fa-check"></i><b>10.1.2</b> The<code>POSIXct</code> and<code>POSIXlt</code> classes</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="dates.html"><a href="dates.html#the-lubridate-package"><i class="fa fa-check"></i><b>10.2</b> The <code>lubridate</code> package</a></li>
+<li class="chapter" data-level="10.3" data-path="dates.html"><a href="dates.html#working-with-character-strings"><i class="fa fa-check"></i><b>10.3</b> Working with character strings</a><ul>
+<li class="chapter" data-level="10.3.1" data-path="dates.html"><a href="dates.html#text-analysis-and-regular-expressions"><i class="fa fa-check"></i><b>10.3.1</b> Text analysis and regular expressions</a></li>
+<li class="chapter" data-level="10.3.2" data-path="dates.html"><a href="dates.html#the-stringr-package"><i class="fa fa-check"></i><b>10.3.2</b> The <code>stringr</code> package</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="pipe.html"><a href="pipe.html#exercise-tasks"><i class="fa fa-check"></i>Exercise Tasks</a></li>
+</ul></li>
 </ul>
 
       </nav>
@@ -436,6 +448,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## [3,]    2    2    2</code></pre>
 </div>
 <p>The <code>%&gt;%</code> operator is particularly well suited when dealing with data frames, especially in scenarios when we have a defined data transformation procedure (e.g. filtering some rows, then selecting columns, then grouping the data according to a categorical variable etc.). With the help of this operator, the code itself acts as a readily interpretable representation of our data transformation process which we can easily customize and extend later. Future examples and exercises will often extensively rely on this operator, so we recommend that you master it well before proceeding with the lessons that follow.</p>
+<p>As a final note, it is important to add that <code>%&gt;%</code> is not the <em>only</em> pipe operator in R. In the <code>wrapr</code> package we can find a very similar “dot-pipe” operator <code>%.&gt;%</code> which works the same way as <code>%&gt;%</code> , but also has a nice “bonus” of creating a special <code>.</code> variable which stores the result of the last statement, as well as having some additional functionality which makes it even more flexible than the <code>%&gt;%</code>. Furthermore, future versions of R will possibly have a “native” pipe operator that looks like this <code>|&gt;</code> and also works somewhat similarly to <code>%&gt;%</code>. For now, we will ignore all the other pipe operators and exclusively focus on <code>%&gt;%</code>, but it’s recommended to be aware of the other ones in case their importance rises in the future.</p>
 <hr />
 </div>
 <div id="tidy-data" class="section level2">
@@ -1004,11 +1017,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <hr />
 <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Programirajmo u R-u</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://www.fer.unizg.hr/en/damir.pintar" property="cc:attributionName" rel="cc:attributionURL">Damir Pintar</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://ratnip.github.io/FER_OPJR/" rel="dct:source">https://ratnip.github.io/FER_OPJR/</a></p>
 
-<div id="refs" class="references">
-<div>
-<p>Bache, Stefan Milton, and Hadley Wickham. 2014. <em>Magrittr: A Forward-Pipe Operator for R</em>. <a href="https://CRAN.R-project.org/package=magrittr">https://CRAN.R-project.org/package=magrittr</a>.</p>
-</div>
-</div>
 </div>
 </div>
 <h3>References</h3>
@@ -1022,8 +1030,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="objects.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="objects.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="dates.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
