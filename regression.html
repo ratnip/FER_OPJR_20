@@ -330,20 +330,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="12.3.4" data-path="ggplot2.html"><a href="ggplot2.html#the-relationship-between-geometry-and-statistics"><i class="fa fa-check"></i><b>12.3.4</b> The relationship between geometry and statistics</a></li>
 <li class="chapter" data-level="12.3.5" data-path="ggplot2.html"><a href="ggplot2.html#storing-a-graph-to-a-file"><i class="fa fa-check"></i><b>12.3.5</b> Storing a graph to a file</a></li>
 <li class="chapter" data-level="12.3.6" data-path="ggplot2.html"><a href="ggplot2.html#aspects-of-scale-coordinate-system-and-theme"><i class="fa fa-check"></i><b>12.3.6</b> Aspects of scale, coordinate system and theme</a></li>
+<li class="chapter" data-level="12.3.7" data-path="ggplot2.html"><a href="ggplot2.html#conditional-faceted-graphs"><i class="fa fa-check"></i><b>12.3.7</b> Conditional (faceted) graphs</a></li>
 </ul></li>
-<li class="chapter" data-level="12.4" data-path="ggplot2.html"><a href="ggplot2.html#tu"><i class="fa fa-check"></i><b>12.4</b> TU</a><ul>
-<li class="chapter" data-level="12.4.1" data-path="ggplot2.html"><a href="ggplot2.html#conditional-faceted-graphs"><i class="fa fa-check"></i><b>12.4.1</b> Conditional (faceted) graphs</a></li>
-</ul></li>
-<li class="chapter" data-level="12.5" data-path="ggplot2.html"><a href="ggplot2.html#graphs-in-exploratory-analysis-and-reporting"><i class="fa fa-check"></i><b>12.5</b> Graphs in Exploratory Analysis and Reporting</a></li>
+<li class="chapter" data-level="12.4" data-path="ggplot2.html"><a href="ggplot2.html#graphs-in-exploratory-analysis-and-reporting"><i class="fa fa-check"></i><b>12.4</b> Graphs in Exploratory Analysis and Reporting</a></li>
 <li class="chapter" data-level="" data-path="dplyr.html"><a href="dplyr.html#exercises"><i class="fa fa-check"></i>Exercises</a></li>
 </ul></li>
+<li class="part"><span><b>III Machine Learning and Predictive Analytics</b></span></li>
 <li class="chapter" data-level="13" data-path="regression.html"><a href="regression.html"><i class="fa fa-check"></i><b>13</b> Selected Machine Learning Methods: Regression Analysis</a><ul>
-<li class="chapter" data-level="13.1" data-path="regression.html"><a href="regression.html#machine-learning"><i class="fa fa-check"></i><b>13.1</b> Machine learning</a><ul>
-<li class="chapter" data-level="13.1.1" data-path="regression.html"><a href="regression.html#simple-linear-regression"><i class="fa fa-check"></i><b>13.1.1</b> Simple linear regression</a></li>
-<li class="chapter" data-level="13.1.2" data-path="regression.html"><a href="regression.html#the-lm-function"><i class="fa fa-check"></i><b>13.1.2</b> The <code>lm</code> function</a></li>
-<li class="chapter" data-level="13.1.3" data-path="regression.html"><a href="regression.html#linear-regression-and-categorical-variables"><i class="fa fa-check"></i><b>13.1.3</b> Linear regression and categorical variables</a></li>
+<li class="chapter" data-level="13.1" data-path="regression.html"><a href="regression.html#machine-learning"><i class="fa fa-check"></i><b>13.1</b> Machine learning</a></li>
+<li class="chapter" data-level="13.2" data-path="regression.html"><a href="regression.html#simple-linear-regression"><i class="fa fa-check"></i><b>13.2</b> Simple linear regression</a><ul>
+<li class="chapter" data-level="13.2.1" data-path="regression.html"><a href="regression.html#the-lm-function"><i class="fa fa-check"></i><b>13.2.1</b> The <code>lm</code> function</a></li>
+<li class="chapter" data-level="13.2.2" data-path="regression.html"><a href="regression.html#linear-regression-and-categorical-variables"><i class="fa fa-check"></i><b>13.2.2</b> Linear regression and categorical variables</a></li>
 </ul></li>
-<li class="chapter" data-level="13.2" data-path="regression.html"><a href="regression.html#multiple-linear-regression"><i class="fa fa-check"></i><b>13.2</b> Multiple linear regression</a></li>
+<li class="chapter" data-level="13.3" data-path="regression.html"><a href="regression.html#multiple-linear-regression"><i class="fa fa-check"></i><b>13.3</b> Multiple linear regression</a></li>
 <li class="chapter" data-level="" data-path="tipovi.html"><a href="tipovi.html#homework-exercises"><i class="fa fa-check"></i>Homework exercises</a></li>
 </ul></li>
 </ul>
@@ -374,8 +373,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Linear regression is an extremely popular method of machine learning that, with the help of mathematical and statistical foundations, describes the potential linear relationship of dataset variables. If sufficient evidence is found that a linear relationship exists, then we have a potentially useful insight into the actual relationship of the two(or more) variables. Likewise, the resulting “formula” can be used to estimate the value of another(target) variable based on the known value of one variable(predictor).</p>
 <p>Although more advanced predictive methods exist today, linear regression is still often used both for its simplicity and for its fact, understanding linear regression lays a solid foundation for learning and understanding more advanced machine learning methods. Because of this, linear regression is a logical and very important first step when entering the field of predictive analysis.</p>
 <hr />
-<div id="simple-linear-regression" class="section level3">
-<h3><span class="header-section-number">13.1.1</span> Simple linear regression</h3>
+</div>
+<div id="simple-linear-regression" class="section level2">
+<h2><span class="header-section-number">13.2</span> Simple linear regression</h2>
 <p>Simple linear regression is a method of supervised machine learning for predicting a target numeric variable using a linear function of the input variable. In this way, the creation of a predictive model is reduced to the process of determining the direction coefficient of direction and intercept value, which will form a simple formula for calculating the target variable using the input parameter. Since this method boils down to estimating the above parameters, the linear regression method belongs to so-called “parametric methods” of machine learning, i.e. predictive analysis.</p>
 <p>Parameters of simple linear regression can often be determined mathematically. The most commonly used method of determining the direction and section coefficient is the <strong>least squares method</strong>, which draws a line between the points of the graph so that the sum of squares of the distance between estimations and real values is minimal (these distances are called “residuals”). Using a mathematical procedure, we can derive a formula that will calculate these parameters exactly, provided we have sufficient number of observations.</p>
 <p>The motivation to perform simple linear regression is often found during the process of exploratory data analysis, especially during the visualization of two numerical variables by using scatterplots. If one of these variables is of interest to us as the target variable of the predictive model, and putting another variable on scatterplot results in a shape resembling a line, then this other variable is an obvious candidate for the simple linear regression method.</p>
@@ -433,9 +433,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>It is important to note that the “R squared” is one of the more important criteria for evaluating the quality of a linear model and as such is often contained in the description of model results. Despite this, there is no clear concensus on what constitutes a “good R squared” value - even a model with a small “R squared” can prove useful, depending on other criteria and the specific circumstances where the model is applied.</p>
 <p>Now let’s show how we create linear models in the R language.</p>
 <hr />
-</div>
 <div id="the-lm-function" class="section level3">
-<h3><span class="header-section-number">13.1.2</span> The <code>lm</code> function</h3>
+<h3><span class="header-section-number">13.2.1</span> The <code>lm</code> function</h3>
 <p>In R, we create simple linear models using the <code>lm</code> function, which is short for <em>linear model</em>. This function has a number of parameters, and we will use the most important ones - the statistical formula which defines how the model should be trained, and the data set we train on:</p>
 <div class="sourceCode" id="cb643"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb643-1"><a href="regression.html#cb643-1"></a><span class="kw">lm</span>(formula, data)</span></code></pre></div>
 <p>The “formula” is simply a short notation which describes how the left side of the formula “depends” on the right side of the formula. If we want to train a linear regression model where the target variable <code>y</code> depends on the variable<code>x</code> for the data frame <code>df</code>, and save the final model in the variable <code>linMod</code>, then in the code may look like this:</p>
@@ -647,7 +646,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <hr />
 </div>
 <div id="linear-regression-and-categorical-variables" class="section level3">
-<h3><span class="header-section-number">13.1.3</span> Linear regression and categorical variables</h3>
+<h3><span class="header-section-number">13.2.2</span> Linear regression and categorical variables</h3>
 <hr />
 <p>In the previous section, we presented the process of creating a predictive linear regression model where the input variable was of numerical type. It is justified to ask - can a categorical variable also be an input to a predictive model?</p>
 <p>The answer is - yes.. but with some adjustment. Let us show how, in a simple example, a two-level categorical variable can be used to train a linear regression model (we will later easily extend this approach to category variables with more than two levels).</p>
@@ -722,7 +721,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 <div id="multiple-linear-regression" class="section level2">
-<h2><span class="header-section-number">13.2</span> Multiple linear regression</h2>
+<h2><span class="header-section-number">13.3</span> Multiple linear regression</h2>
 <hr />
 <p>The principle of simple linear regression is easily extended to a scenario when we have multiple input variables - simply, we are looking for a function that will express the target variable as a linear combination of input variables.</p>
 <p>The problem of building a model again comes down to finding the “good” direction coefficients that will be given to each input variable (plus the intercept), although formally we cannot talk now about the “regression line”, but rather must a somewhat more complex notion of a “hyper-plane.”</p>

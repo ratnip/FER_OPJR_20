@@ -330,20 +330,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="12.3.4" data-path="ggplot2.html"><a href="ggplot2.html#the-relationship-between-geometry-and-statistics"><i class="fa fa-check"></i><b>12.3.4</b> The relationship between geometry and statistics</a></li>
 <li class="chapter" data-level="12.3.5" data-path="ggplot2.html"><a href="ggplot2.html#storing-a-graph-to-a-file"><i class="fa fa-check"></i><b>12.3.5</b> Storing a graph to a file</a></li>
 <li class="chapter" data-level="12.3.6" data-path="ggplot2.html"><a href="ggplot2.html#aspects-of-scale-coordinate-system-and-theme"><i class="fa fa-check"></i><b>12.3.6</b> Aspects of scale, coordinate system and theme</a></li>
+<li class="chapter" data-level="12.3.7" data-path="ggplot2.html"><a href="ggplot2.html#conditional-faceted-graphs"><i class="fa fa-check"></i><b>12.3.7</b> Conditional (faceted) graphs</a></li>
 </ul></li>
-<li class="chapter" data-level="12.4" data-path="ggplot2.html"><a href="ggplot2.html#tu"><i class="fa fa-check"></i><b>12.4</b> TU</a><ul>
-<li class="chapter" data-level="12.4.1" data-path="ggplot2.html"><a href="ggplot2.html#conditional-faceted-graphs"><i class="fa fa-check"></i><b>12.4.1</b> Conditional (faceted) graphs</a></li>
-</ul></li>
-<li class="chapter" data-level="12.5" data-path="ggplot2.html"><a href="ggplot2.html#graphs-in-exploratory-analysis-and-reporting"><i class="fa fa-check"></i><b>12.5</b> Graphs in Exploratory Analysis and Reporting</a></li>
+<li class="chapter" data-level="12.4" data-path="ggplot2.html"><a href="ggplot2.html#graphs-in-exploratory-analysis-and-reporting"><i class="fa fa-check"></i><b>12.4</b> Graphs in Exploratory Analysis and Reporting</a></li>
 <li class="chapter" data-level="" data-path="dplyr.html"><a href="dplyr.html#exercises"><i class="fa fa-check"></i>Exercises</a></li>
 </ul></li>
+<li class="part"><span><b>III Machine Learning and Predictive Analytics</b></span></li>
 <li class="chapter" data-level="13" data-path="regression.html"><a href="regression.html"><i class="fa fa-check"></i><b>13</b> Selected Machine Learning Methods: Regression Analysis</a><ul>
-<li class="chapter" data-level="13.1" data-path="regression.html"><a href="regression.html#machine-learning"><i class="fa fa-check"></i><b>13.1</b> Machine learning</a><ul>
-<li class="chapter" data-level="13.1.1" data-path="regression.html"><a href="regression.html#simple-linear-regression"><i class="fa fa-check"></i><b>13.1.1</b> Simple linear regression</a></li>
-<li class="chapter" data-level="13.1.2" data-path="regression.html"><a href="regression.html#the-lm-function"><i class="fa fa-check"></i><b>13.1.2</b> The <code>lm</code> function</a></li>
-<li class="chapter" data-level="13.1.3" data-path="regression.html"><a href="regression.html#linear-regression-and-categorical-variables"><i class="fa fa-check"></i><b>13.1.3</b> Linear regression and categorical variables</a></li>
+<li class="chapter" data-level="13.1" data-path="regression.html"><a href="regression.html#machine-learning"><i class="fa fa-check"></i><b>13.1</b> Machine learning</a></li>
+<li class="chapter" data-level="13.2" data-path="regression.html"><a href="regression.html#simple-linear-regression"><i class="fa fa-check"></i><b>13.2</b> Simple linear regression</a><ul>
+<li class="chapter" data-level="13.2.1" data-path="regression.html"><a href="regression.html#the-lm-function"><i class="fa fa-check"></i><b>13.2.1</b> The <code>lm</code> function</a></li>
+<li class="chapter" data-level="13.2.2" data-path="regression.html"><a href="regression.html#linear-regression-and-categorical-variables"><i class="fa fa-check"></i><b>13.2.2</b> Linear regression and categorical variables</a></li>
 </ul></li>
-<li class="chapter" data-level="13.2" data-path="regression.html"><a href="regression.html#multiple-linear-regression"><i class="fa fa-check"></i><b>13.2</b> Multiple linear regression</a></li>
+<li class="chapter" data-level="13.3" data-path="regression.html"><a href="regression.html#multiple-linear-regression"><i class="fa fa-check"></i><b>13.3</b> Multiple linear regression</a></li>
 <li class="chapter" data-level="" data-path="tipovi.html"><a href="tipovi.html#homework-exercises"><i class="fa fa-check"></i>Homework exercises</a></li>
 </ul></li>
 </ul>
@@ -548,7 +547,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb396-6"><a href="dates.html#cb396-6"></a><span class="co"># &quot;01-12-2001 14:30&quot; &lt;- timestamp read in New York, USA, EST time zone</span></span>
 <span id="cb396-7"><a href="dates.html#cb396-7"></a><span class="kw">as.POSIXct</span>(<span class="st">&quot;2015-10-28 15:30:42&quot;</span>)</span>
 <span id="cb396-8"><a href="dates.html#cb396-8"></a><span class="kw">as.POSIXct</span>(<span class="st">&quot;01-12-2001 14:30&quot;</span>, <span class="dt">tz =</span> <span class="st">&quot;EST&quot;</span>, <span class="dt">format =</span> <span class="st">&quot;%d-%m-%Y %H:%M&quot;</span>)</span></code></pre></div>
-<pre><code>## [1] &quot;2021-01-19 16:39:34 CET&quot;
+<pre><code>## [1] &quot;2021-01-19 16:58:07 CET&quot;
 ## [1] &quot;2015-10-28 15:30:42 CET&quot;
 ## [1] &quot;2001-12-01 14:30:00 EST&quot;</code></pre>
 </div>
@@ -584,8 +583,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb402-3"><a href="dates.html#cb402-3"></a></span>
 <span id="cb402-4"><a href="dates.html#cb402-4"></a><span class="co"># print out how many hours have passed since midnight 1/1/2015. by far</span></span>
 <span id="cb402-5"><a href="dates.html#cb402-5"></a><span class="kw">difftime</span>(<span class="kw">Sys.time</span>(), <span class="st">&quot;2015-01-01 00:00:00&quot;</span>, <span class="dt">units =</span> <span class="st">&quot;hours&quot;</span>)</span></code></pre></div>
-<pre><code>## [1] &quot;2021-01-19 16:56:15 CET&quot;
-## Time difference of 53056.66 hours</code></pre>
+<pre><code>## [1] &quot;2021-01-19 17:14:48 CET&quot;
+## Time difference of 53056.97 hours</code></pre>
 </div>
 <hr />
 <p>The class <code>POSIXlt</code> is very similar to its compact relative <code>POSIXct</code>. We use the similarly fashioned <code>as.POSIXlt</code> function to create one, however the difference is that we end up with a list which allows us to easily extract certain parameters from a timestamp, such as number of seconds, minutes, day of the week, etc. We can easily see all the elements of the list if we create a <code>POSIXlt</code> object and then call the <code>unclass</code> function on it, which will convert it to an “ordinary” list. We can even go a step further - if we put this list through the <code>unlist</code> function, we get a simple, easily interpretable character vector as a result.</p>
@@ -729,7 +728,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb423-4"><a href="dates.html#cb423-4"></a><span class="co"># print the timestamp which happened exactly an hour ago</span></span>
 <span id="cb423-5"><a href="dates.html#cb423-5"></a><span class="kw">now</span>() <span class="op">-</span><span class="st"> </span><span class="dv">60</span> <span class="op">*</span><span class="st"> </span><span class="dv">60</span></span></code></pre></div>
 <pre><code>## [1] &quot;2021-01-20&quot;
-## [1] &quot;2021-01-19 15:39:37 CET&quot;</code></pre>
+## [1] &quot;2021-01-19 15:58:09 CET&quot;</code></pre>
 </div>
 <hr />
 <p>We already mentioned that managing time-related data can become very complex, especially considering that time intervals can be expressed generically (e.g., “2 years”) or specifically (the span of two dates), and that mathematical and calendar ways of expressing time intervals do not necessarily match (e.g., “period of one year” can mathematically mean “the exact number of seconds in 365 days” but also the contextually dependent “period until the same date next year”).</p>
