@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>12 Visualising data | Let’s program in R</title>
+  <title>12 Visualising data with ggplot2 package | Let’s program in R</title>
   <meta name="description" content="R Coursebook" />
   <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="12 Visualising data | Let’s program in R" />
+  <meta property="og:title" content="12 Visualising data with ggplot2 package | Let’s program in R" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="12 Visualising data | Let’s program in R" />
+  <meta name="twitter:title" content="12 Visualising data with ggplot2 package | Let’s program in R" />
   
   <meta name="twitter:description" content="R Coursebook" />
   
@@ -24,7 +24,7 @@
 <meta name="author" content="Damir Pintar" />
 
 
-<meta name="date" content="2021-01-11" />
+<meta name="date" content="2021-01-19" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +32,7 @@
   
   
 <link rel="prev" href="dplyr.html"/>
-
+<link rel="next" href="regression.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -320,7 +320,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="11.9" data-path="dplyr.html"><a href="dplyr.html#integrating-dplyr-with-relational-databases"><i class="fa fa-check"></i><b>11.9</b> Integrating <code>dplyr</code> with relational databases</a></li>
 <li class="chapter" data-level="" data-path="dplyr.html"><a href="dplyr.html#exercises"><i class="fa fa-check"></i>Exercises</a></li>
 </ul></li>
-<li class="chapter" data-level="12" data-path="ggplot2.html"><a href="ggplot2.html"><i class="fa fa-check"></i><b>12</b> Visualising data</a><ul>
+<li class="chapter" data-level="12" data-path="ggplot2.html"><a href="ggplot2.html"><i class="fa fa-check"></i><b>12</b> Visualising data with <code>ggplot2</code> package</a><ul>
 <li class="chapter" data-level="12.1" data-path="ggplot2.html"><a href="ggplot2.html#exploratory-data-analysis"><i class="fa fa-check"></i><b>12.1</b> Exploratory data analysis</a></li>
 <li class="chapter" data-level="12.2" data-path="ggplot2.html"><a href="ggplot2.html#data-visualization-using-the-r-language"><i class="fa fa-check"></i><b>12.2</b> Data visualization using the R language</a></li>
 <li class="chapter" data-level="12.3" data-path="ggplot2.html"><a href="ggplot2.html#grammar-of-graphics-and-the-ggplot2-package"><i class="fa fa-check"></i><b>12.3</b> Grammar of graphics and the <code>ggplot2</code> package</a><ul>
@@ -330,10 +330,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="12.3.4" data-path="ggplot2.html"><a href="ggplot2.html#the-relationship-between-geometry-and-statistics"><i class="fa fa-check"></i><b>12.3.4</b> The relationship between geometry and statistics</a></li>
 <li class="chapter" data-level="12.3.5" data-path="ggplot2.html"><a href="ggplot2.html#storing-a-graph-to-a-file"><i class="fa fa-check"></i><b>12.3.5</b> Storing a graph to a file</a></li>
 <li class="chapter" data-level="12.3.6" data-path="ggplot2.html"><a href="ggplot2.html#aspects-of-scale-coordinate-system-and-theme"><i class="fa fa-check"></i><b>12.3.6</b> Aspects of scale, coordinate system and theme</a></li>
-<li class="chapter" data-level="12.3.7" data-path="ggplot2.html"><a href="ggplot2.html#conditional-faceted-graphs"><i class="fa fa-check"></i><b>12.3.7</b> Conditional (faceted) graphs</a></li>
 </ul></li>
-<li class="chapter" data-level="12.4" data-path="ggplot2.html"><a href="ggplot2.html#graphs-in-exploratory-analysis-and-reporting"><i class="fa fa-check"></i><b>12.4</b> Graphs in Exploratory Analysis and Reporting</a></li>
+<li class="chapter" data-level="12.4" data-path="ggplot2.html"><a href="ggplot2.html#tu"><i class="fa fa-check"></i><b>12.4</b> TU</a><ul>
+<li class="chapter" data-level="12.4.1" data-path="ggplot2.html"><a href="ggplot2.html#conditional-faceted-graphs"><i class="fa fa-check"></i><b>12.4.1</b> Conditional (faceted) graphs</a></li>
+</ul></li>
+<li class="chapter" data-level="12.5" data-path="ggplot2.html"><a href="ggplot2.html#graphs-in-exploratory-analysis-and-reporting"><i class="fa fa-check"></i><b>12.5</b> Graphs in Exploratory Analysis and Reporting</a></li>
 <li class="chapter" data-level="" data-path="dplyr.html"><a href="dplyr.html#exercises"><i class="fa fa-check"></i>Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="regression.html"><a href="regression.html"><i class="fa fa-check"></i><b>13</b> Selected Machine Learning Methods: Regression Analysis</a><ul>
+<li class="chapter" data-level="13.1" data-path="regression.html"><a href="regression.html#machine-learning"><i class="fa fa-check"></i><b>13.1</b> Machine learning</a><ul>
+<li class="chapter" data-level="13.1.1" data-path="regression.html"><a href="regression.html#simple-linear-regression"><i class="fa fa-check"></i><b>13.1.1</b> Simple linear regression</a></li>
+<li class="chapter" data-level="13.1.2" data-path="regression.html"><a href="regression.html#the-lm-function"><i class="fa fa-check"></i><b>13.1.2</b> The <code>lm</code> function</a></li>
+<li class="chapter" data-level="13.1.3" data-path="regression.html"><a href="regression.html#linear-regression-and-categorical-variables"><i class="fa fa-check"></i><b>13.1.3</b> Linear regression and categorical variables</a></li>
+</ul></li>
+<li class="chapter" data-level="13.2" data-path="regression.html"><a href="regression.html#multiple-linear-regression"><i class="fa fa-check"></i><b>13.2</b> Multiple linear regression</a></li>
+<li class="chapter" data-level="" data-path="tipovi.html"><a href="tipovi.html#homework-exercises"><i class="fa fa-check"></i>Homework exercises</a></li>
 </ul></li>
 </ul>
 
@@ -353,7 +364,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
             <section class="normal" id="section-">
 <div id="ggplot2" class="section level1">
-<h1><span class="header-section-number">12</span> Visualising data</h1>
+<h1><span class="header-section-number">12</span> Visualising data with <code>ggplot2</code> package</h1>
 <hr />
 <div id="exploratory-data-analysis" class="section level2">
 <h2><span class="header-section-number">12.1</span> Exploratory data analysis</h2>
@@ -449,7 +460,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Since some of the variables in this dataset have a numeric datatype even though a categorical type would be more suitable, before we continue we can first factorize these variables. While we are doing this, we can also demonstrate a few as yet unused parameters and functions which help with the categorization - the <code>labels</code> parameter which allows “relabeling” of categories (according to the numerical and alphabetical order of the original categories) and the <code>ordered</code> function which is simply a shorthand way to convert a numerical variable into a categorical with the natural order of numbers being used as a template for ordering category levels.</p>
 <div class="sourceCode" id="cb552"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb552-1"><a href="ggplot2.html#cb552-1"></a>mtcars<span class="op">$</span>vs &lt;-<span class="st"> </span><span class="kw">factor</span>(mtcars<span class="op">$</span>vs, <span class="dt">labels =</span> <span class="kw">c</span>(<span class="st">&quot;V&quot;</span>, <span class="st">&quot;S&quot;</span>))</span>
 <span id="cb552-2"><a href="ggplot2.html#cb552-2"></a>mtcars<span class="op">$</span>am &lt;-<span class="st"> </span><span class="kw">factor</span>(mtcars<span class="op">$</span>am, <span class="dt">labels =</span> <span class="kw">c</span>(<span class="st">&quot;automatic&quot;</span>, <span class="st">&quot;manual&quot;</span>))</span>
-<span id="cb552-3"><a href="ggplot2.html#cb552-3"></a>mtcars<span class="op">$</span>cyl  &lt;-<span class="st"> </span><span class="kw">ordered</span>(mtcars<span class="op">$</span>cyl)</span>
+<span id="cb552-3"><a href="ggplot2.html#cb552-3"></a>mtcars<span class="op">$</span>cyl  &lt;-<span class="st"> </span><span class="kw">factor</span>(mtcars<span class="op">$</span>cyl)  <span class="co"># we&#39;ll keep it unordered for easier visualization</span></span>
 <span id="cb552-4"><a href="ggplot2.html#cb552-4"></a>mtcars<span class="op">$</span>gear &lt;-<span class="st"> </span><span class="kw">ordered</span>(mtcars<span class="op">$</span>gear)</span>
 <span id="cb552-5"><a href="ggplot2.html#cb552-5"></a>mtcars<span class="op">$</span>carb &lt;-<span class="st"> </span><span class="kw">ordered</span>(mtcars<span class="op">$</span>carb)</span></code></pre></div>
 <hr />
@@ -497,22 +508,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb556-3"><a href="ggplot2.html#cb556-3"></a><span class="co"># what happens if we put `as.numeric(cyl)` instead of the categorical variant?</span></span></code></pre></div>
 <div class="fold s o">
 <div class="sourceCode" id="cb557"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb557-1"><a href="ggplot2.html#cb557-1"></a><span class="kw">ggplot</span>(mtcars, <span class="kw">aes</span>(<span class="dt">x =</span> wt, <span class="dt">y =</span> mpg, <span class="dt">shape =</span> cyl)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>()</span></code></pre></div>
-<pre><code>## Warning: Using shapes for an ordinal variable is not advised</code></pre>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-399-1.png" width="672" /></p>
 </div>
 <hr />
 <p><strong>Exercise 12.4 - the color aesthetic</strong></p>
-<div class="sourceCode" id="cb559"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb559-1"><a href="ggplot2.html#cb559-1"></a><span class="co"># create the same graph, but instead of the `shape` aesthetic, use the `color` aesthetic</span></span></code></pre></div>
+<div class="sourceCode" id="cb558"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb558-1"><a href="ggplot2.html#cb558-1"></a><span class="co"># create the same graph, but instead of the `shape` aesthetic, use the `color` aesthetic</span></span></code></pre></div>
 <div class="fold s o">
-<div class="sourceCode" id="cb560"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb560-1"><a href="ggplot2.html#cb560-1"></a><span class="kw">ggplot</span>(mtcars, <span class="kw">aes</span>(<span class="dt">x =</span> wt, <span class="dt">y =</span> mpg, <span class="dt">color =</span> cyl)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb559"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb559-1"><a href="ggplot2.html#cb559-1"></a><span class="kw">ggplot</span>(mtcars, <span class="kw">aes</span>(<span class="dt">x =</span> wt, <span class="dt">y =</span> mpg, <span class="dt">color =</span> cyl)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>()</span></code></pre></div>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-401-1.png" width="672" /></p>
 </div>
 <hr />
 <p><strong>Exercise 12.5 - combining aesthetics</strong></p>
-<div class="sourceCode" id="cb561"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb561-1"><a href="ggplot2.html#cb561-1"></a><span class="co"># create the same graph, but now for the `cyl` column, combine both the `shape` and `color` aesthetics</span></span></code></pre></div>
+<div class="sourceCode" id="cb560"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb560-1"><a href="ggplot2.html#cb560-1"></a><span class="co"># create the same graph, but now for the `cyl` column, combine both the `shape` and `color` aesthetics</span></span></code></pre></div>
 <div class="fold s o">
-<div class="sourceCode" id="cb562"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb562-1"><a href="ggplot2.html#cb562-1"></a><span class="kw">ggplot</span>(mtcars, <span class="kw">aes</span>(<span class="dt">x =</span> wt, <span class="dt">y =</span> mpg, <span class="dt">color =</span> cyl, <span class="dt">shape =</span> cyl)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span> ()</span></code></pre></div>
-<pre><code>## Warning: Using shapes for an ordinal variable is not advised</code></pre>
+<div class="sourceCode" id="cb561"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb561-1"><a href="ggplot2.html#cb561-1"></a><span class="kw">ggplot</span>(mtcars, <span class="kw">aes</span>(<span class="dt">x =</span> wt, <span class="dt">y =</span> mpg, <span class="dt">color =</span> cyl, <span class="dt">shape =</span> cyl)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span> ()</span></code></pre></div>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-403-1.png" width="672" /></p>
 </div>
 <hr />
@@ -522,24 +531,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="the-labs-function" class="section level4">
 <h4><span class="header-section-number">12.3.1.2</span> The <code>labs</code> function</h4>
 <p>We have seen that <code>ggplot</code> automatically creates a legend for its aesthetics and that it names the axes with a variable name ( axes <em>x</em> and <em>y</em> are also “legends” of sorts). If we want to manually name axes and legends, and perhaps add a title to the graph, we can use the <code>labs</code> function, which we also add as a new layer using the following syntax:</p>
-<div class="sourceCode" id="cb564"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb564-1"><a href="ggplot2.html#cb564-1"></a><span class="kw">ggplot</span>(...) <span class="op">+</span><span class="st"> </span>...</span>
-<span id="cb564-2"><a href="ggplot2.html#cb564-2"></a></span>
-<span id="cb564-3"><a href="ggplot2.html#cb564-3"></a><span class="op">+</span><span class="st"> </span><span class="kw">labs</span> (<span class="dt">x =</span> <span class="st">&quot;x axis title&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;y axis title&quot;</span>, <span class="dt">title =</span> <span class="st">&quot;Graph Title&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb562"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb562-1"><a href="ggplot2.html#cb562-1"></a><span class="kw">ggplot</span>(...) <span class="op">+</span><span class="st"> </span>...</span>
+<span id="cb562-2"><a href="ggplot2.html#cb562-2"></a></span>
+<span id="cb562-3"><a href="ggplot2.html#cb562-3"></a><span class="op">+</span><span class="st"> </span><span class="kw">labs</span> (<span class="dt">x =</span> <span class="st">&quot;x axis title&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;y axis title&quot;</span>, <span class="dt">title =</span> <span class="st">&quot;Graph Title&quot;</span>)</span></code></pre></div>
 <p>Let’s try this in the next assignment.</p>
 <p><strong>Exercise 12.6 - <code>labs</code> function</strong></p>
-<div class="sourceCode" id="cb565"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb565-1"><a href="ggplot2.html#cb565-1"></a><span class="co"># rename axes and legend of the following graph</span></span>
-<span id="cb565-2"><a href="ggplot2.html#cb565-2"></a><span class="co"># and add a suitable title (something that succintly describes what the graph represents)</span></span>
-<span id="cb565-3"><a href="ggplot2.html#cb565-3"></a><span class="kw">ggplot</span>(mtcars, <span class="kw">aes</span> (<span class="dt">x =</span> wt, <span class="dt">y =</span> mpg, <span class="dt">color =</span> cyl, <span class="dt">shape =</span> cyl)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>()</span></code></pre></div>
-<pre><code>## Warning: Using shapes for an ordinal variable is not advised</code></pre>
+<div class="sourceCode" id="cb563"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb563-1"><a href="ggplot2.html#cb563-1"></a><span class="co"># rename axes and legend of the following graph</span></span>
+<span id="cb563-2"><a href="ggplot2.html#cb563-2"></a><span class="co"># and add a suitable title (something that succintly describes what the graph represents)</span></span>
+<span id="cb563-3"><a href="ggplot2.html#cb563-3"></a><span class="kw">ggplot</span>(mtcars, <span class="kw">aes</span> (<span class="dt">x =</span> wt, <span class="dt">y =</span> mpg, <span class="dt">color =</span> cyl, <span class="dt">shape =</span> cyl)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>()</span></code></pre></div>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-405-1.png" width="672" /></p>
 <div class="fold s o">
-<div class="sourceCode" id="cb567"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb567-1"><a href="ggplot2.html#cb567-1"></a><span class="co"># rename axes and legend of the following graph</span></span>
-<span id="cb567-2"><a href="ggplot2.html#cb567-2"></a><span class="co"># and add a suitable title (something that succintly describes what the graph represents)</span></span>
-<span id="cb567-3"><a href="ggplot2.html#cb567-3"></a><span class="kw">ggplot</span>(mtcars, <span class="kw">aes</span>(<span class="dt">x =</span> wt, <span class="dt">y =</span> mpg, <span class="dt">color =</span> cyl, <span class="dt">shape =</span> cyl)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span> () <span class="op">+</span></span>
-<span id="cb567-4"><a href="ggplot2.html#cb567-4"></a><span class="kw">labs</span> (<span class="dt">x =</span> <span class="st">&quot;Weight / 1000 lb&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Consumption / miles per gallon&quot;</span>,</span>
-<span id="cb567-5"><a href="ggplot2.html#cb567-5"></a>     <span class="dt">color =</span> <span class="st">&quot;Number of cylinders&quot;</span>, <span class="dt">shape =</span> <span class="st">&quot;Number of cylinders&quot;</span>,</span>
-<span id="cb567-6"><a href="ggplot2.html#cb567-6"></a>   <span class="dt">title =</span> <span class="st">&quot;Heavier cars spend more fuel&quot;</span>)</span></code></pre></div>
-<pre><code>## Warning: Using shapes for an ordinal variable is not advised</code></pre>
+<div class="sourceCode" id="cb564"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb564-1"><a href="ggplot2.html#cb564-1"></a><span class="co"># rename axes and legend of the following graph</span></span>
+<span id="cb564-2"><a href="ggplot2.html#cb564-2"></a><span class="co"># and add a suitable title (something that succintly describes what the graph represents)</span></span>
+<span id="cb564-3"><a href="ggplot2.html#cb564-3"></a><span class="kw">ggplot</span>(mtcars, <span class="kw">aes</span>(<span class="dt">x =</span> wt, <span class="dt">y =</span> mpg, <span class="dt">color =</span> cyl, <span class="dt">shape =</span> cyl)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span> () <span class="op">+</span></span>
+<span id="cb564-4"><a href="ggplot2.html#cb564-4"></a><span class="kw">labs</span> (<span class="dt">x =</span> <span class="st">&quot;Weight / 1000 lb&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Consumption / miles per gallon&quot;</span>,</span>
+<span id="cb564-5"><a href="ggplot2.html#cb564-5"></a>     <span class="dt">color =</span> <span class="st">&quot;Number of cylinders&quot;</span>, <span class="dt">shape =</span> <span class="st">&quot;Number of cylinders&quot;</span>,</span>
+<span id="cb564-6"><a href="ggplot2.html#cb564-6"></a>   <span class="dt">title =</span> <span class="st">&quot;Heavier cars spend more fuel&quot;</span>)</span></code></pre></div>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-406-1.png" width="672" /></p>
 </div>
 <hr />
@@ -551,21 +558,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>To achieve this, we simply initialize the parameters inside a function corresponding to the geometry we are adding, and we pay attention NOT to wrap the parameters inside the <code>aes</code> function (which automatically corresponds to “mapping”). The values to which we initialize these parameters have to be meaningful for that aesthetic (i.e. “color” can be set to <code>"red"</code> or <code>"#FF0000"', "shape" to numbers from</code>0<code>to</code>25` which correspond to a specific table of shapes etc.) The appropriate values of each aesthetic can be found in the official documentation.</p>
 <p>Correct example of changing the “global” color of points:</p>
 <div class="fold o">
-<div class="sourceCode" id="cb569"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb569-1"><a href="ggplot2.html#cb569-1"></a><span class="kw">ggplot</span>(mtcars, <span class="kw">aes</span>(wt, mpg)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>(<span class="dt">color =</span> <span class="st">&quot;blue&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb565"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb565-1"><a href="ggplot2.html#cb565-1"></a><span class="kw">ggplot</span>(mtcars, <span class="kw">aes</span>(wt, mpg)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>(<span class="dt">color =</span> <span class="st">&quot;blue&quot;</span>)</span></code></pre></div>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-407-1.png" width="672" /></p>
 </div>
 <p>Example which uses the <strong>wrong</strong> syntax:</p>
 <div class="fold o">
-<div class="sourceCode" id="cb570"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb570-1"><a href="ggplot2.html#cb570-1"></a><span class="co">#ggplot will do the mapping of the word &quot;blue&quot; to the `color` aesthetic</span></span>
-<span id="cb570-2"><a href="ggplot2.html#cb570-2"></a><span class="kw">ggplot</span>(mtcars, <span class="kw">aes</span>(wt, mpg)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>(<span class="kw">aes</span>(<span class="dt">color =</span> <span class="st">&quot;blue&quot;</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb566"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb566-1"><a href="ggplot2.html#cb566-1"></a><span class="co">#ggplot will do the mapping of the word &quot;blue&quot; to the `color` aesthetic</span></span>
+<span id="cb566-2"><a href="ggplot2.html#cb566-2"></a><span class="kw">ggplot</span>(mtcars, <span class="kw">aes</span>(wt, mpg)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>(<span class="kw">aes</span>(<span class="dt">color =</span> <span class="st">&quot;blue&quot;</span>))</span></code></pre></div>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-408-1.png" width="672" /></p>
 </div>
 <hr />
 <p><strong>Exercise 12.7 - fixed geometry parameters</strong></p>
-<div class="sourceCode" id="cb571"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb571-1"><a href="ggplot2.html#cb571-1"></a><span class="co"># draw a scatterplot showing the relationship between `wt` and `mpg`</span></span>
-<span id="cb571-2"><a href="ggplot2.html#cb571-2"></a><span class="co"># make the points red, their shape to `4` and size to `3`</span></span></code></pre></div>
+<div class="sourceCode" id="cb567"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb567-1"><a href="ggplot2.html#cb567-1"></a><span class="co"># draw a scatterplot showing the relationship between `wt` and `mpg`</span></span>
+<span id="cb567-2"><a href="ggplot2.html#cb567-2"></a><span class="co"># make the points red, their shape to `4` and size to `3`</span></span></code></pre></div>
 <div class="fold s o">
-<div class="sourceCode" id="cb572"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb572-1"><a href="ggplot2.html#cb572-1"></a><span class="kw">ggplot</span>(mtcars, <span class="kw">aes</span>(<span class="dt">x =</span> wt, <span class="dt">y =</span> mpg)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>(<span class="dt">color =</span> <span class="st">&quot;red&quot;</span>, <span class="dt">shape =</span> <span class="dv">4</span>, <span class="dt">size =</span> <span class="dv">3</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb568"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb568-1"><a href="ggplot2.html#cb568-1"></a><span class="kw">ggplot</span>(mtcars, <span class="kw">aes</span>(<span class="dt">x =</span> wt, <span class="dt">y =</span> mpg)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>(<span class="dt">color =</span> <span class="st">&quot;red&quot;</span>, <span class="dt">shape =</span> <span class="dv">4</span>, <span class="dt">size =</span> <span class="dv">3</span>)</span></code></pre></div>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-410-1.png" width="672" /></p>
 </div>
 <hr />
@@ -576,13 +583,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Try adding a line geometry layer to this graph. You can use the <code>layer</code> function with the <code>geom</code> parameter set to <code>line</code>, but the more popular approach is to use the <code>geom_line</code> helper function, which works similar to the <code>geom_point</code> function. Since we keep recycling the same foundation for our graph, we can first save it to an object before adding layers to it.</p>
 <hr />
 <p><strong>Exercise 12.8 - adding a line layer</strong></p>
-<div class="sourceCode" id="cb573"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb573-1"><a href="ggplot2.html#cb573-1"></a><span class="co"># we store the foundation of our graph in a variable called `graph`</span></span>
-<span id="cb573-2"><a href="ggplot2.html#cb573-2"></a>graph &lt;-<span class="st"> </span><span class="kw">ggplot</span>(mtcars, <span class="kw">aes</span> (<span class="dt">x =</span> wt, <span class="dt">y =</span> mpg))</span>
-<span id="cb573-3"><a href="ggplot2.html#cb573-3"></a></span>
-<span id="cb573-4"><a href="ggplot2.html#cb573-4"></a><span class="co"># add the point geometry followed by the line geometry to this object and print it on screen</span></span></code></pre></div>
+<div class="sourceCode" id="cb569"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb569-1"><a href="ggplot2.html#cb569-1"></a><span class="co"># we store the foundation of our graph in a variable called `graph`</span></span>
+<span id="cb569-2"><a href="ggplot2.html#cb569-2"></a>graph &lt;-<span class="st"> </span><span class="kw">ggplot</span>(mtcars, <span class="kw">aes</span> (<span class="dt">x =</span> wt, <span class="dt">y =</span> mpg))</span>
+<span id="cb569-3"><a href="ggplot2.html#cb569-3"></a></span>
+<span id="cb569-4"><a href="ggplot2.html#cb569-4"></a><span class="co"># add the point geometry followed by the line geometry to this object and print it on screen</span></span></code></pre></div>
 <div class="fold s o">
-<div class="sourceCode" id="cb574"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb574-1"><a href="ggplot2.html#cb574-1"></a><span class="co"># add the point geometry followed by the line geometry to this object and print it on screen</span></span>
-<span id="cb574-2"><a href="ggplot2.html#cb574-2"></a>graph <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>() <span class="op">+</span><span class="st"> </span><span class="kw">geom_line</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb570"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb570-1"><a href="ggplot2.html#cb570-1"></a><span class="co"># add the point geometry followed by the line geometry to this object and print it on screen</span></span>
+<span id="cb570-2"><a href="ggplot2.html#cb570-2"></a>graph <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>() <span class="op">+</span><span class="st"> </span><span class="kw">geom_line</span>()</span></code></pre></div>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-412-1.png" width="672" /></p>
 </div>
 <hr />
@@ -601,31 +608,31 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Let us return to our graph of weight vs consumption, but this time instead of adding a layer of linear geometry, we add a layer that will display “smoothing” (i.e. the <code>smooth</code> statistics). This is a good example of using how the statistic aspect works - instead of connecting the points directly with a line, a special function will “average” the values and then connect these averaged values with a (curved or straight) line. To achieve this, we leverage the <code>stat_smooth</code> function, which - if we use default parameters - will create a new layer with a “smoothed” representation of the <em>y</em> variable according to the <em>x</em> variable, using the so-called <code>loess</code> method, while also displaying the confidence intervals.</p>
 <hr />
 <p><strong>Exercise 12.9 - linear smoothing</strong></p>
-<div class="sourceCode" id="cb575"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb575-1"><a href="ggplot2.html#cb575-1"></a><span class="co"># add the point geometry to the variable `graph`</span></span>
-<span id="cb575-2"><a href="ggplot2.html#cb575-2"></a><span class="co"># then add a linear smoothing layer</span></span>
-<span id="cb575-3"><a href="ggplot2.html#cb575-3"></a><span class="co"># use the `stat_smooth` function</span></span>
-<span id="cb575-4"><a href="ggplot2.html#cb575-4"></a><span class="co"># with the `method` parameter set to `lm` (linear smoothing)</span></span></code></pre></div>
+<div class="sourceCode" id="cb571"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb571-1"><a href="ggplot2.html#cb571-1"></a><span class="co"># add the point geometry to the variable `graph`</span></span>
+<span id="cb571-2"><a href="ggplot2.html#cb571-2"></a><span class="co"># then add a linear smoothing layer</span></span>
+<span id="cb571-3"><a href="ggplot2.html#cb571-3"></a><span class="co"># use the `stat_smooth` function</span></span>
+<span id="cb571-4"><a href="ggplot2.html#cb571-4"></a><span class="co"># with the `method` parameter set to `lm` (linear smoothing)</span></span></code></pre></div>
 <div class="fold s o">
-<div class="sourceCode" id="cb576"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb576-1"><a href="ggplot2.html#cb576-1"></a>graph <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>() <span class="op">+</span><span class="st"> </span><span class="kw">stat_smooth</span>(<span class="dt">method =</span> <span class="st">&#39;lm&#39;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb572"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb572-1"><a href="ggplot2.html#cb572-1"></a>graph <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>() <span class="op">+</span><span class="st"> </span><span class="kw">stat_smooth</span>(<span class="dt">method =</span> <span class="st">&#39;lm&#39;</span>)</span></code></pre></div>
 <pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-414-1.png" width="672" /></p>
 </div>
 <hr />
 <p><strong>Exercise 12.10 - ‘loess’ smoothing</strong></p>
-<div class="sourceCode" id="cb578"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb578-1"><a href="ggplot2.html#cb578-1"></a><span class="co"># repeat the process but se the smoothing method to `loess`</span></span></code></pre></div>
+<div class="sourceCode" id="cb574"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb574-1"><a href="ggplot2.html#cb574-1"></a><span class="co"># repeat the process but se the smoothing method to `loess`</span></span></code></pre></div>
 <div class="fold s o">
-<div class="sourceCode" id="cb579"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb579-1"><a href="ggplot2.html#cb579-1"></a>graph <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>() <span class="op">+</span><span class="st"> </span><span class="kw">stat_smooth</span>(<span class="dt">method =</span> <span class="st">&#39;loess&#39;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb575"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb575-1"><a href="ggplot2.html#cb575-1"></a>graph <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>() <span class="op">+</span><span class="st"> </span><span class="kw">stat_smooth</span>(<span class="dt">method =</span> <span class="st">&#39;loess&#39;</span>)</span></code></pre></div>
 <pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-416-1.png" width="672" /></p>
 </div>
 <hr />
 <p><strong>Exercise 12.11 - the group aesthetic</strong></p>
-<div class="sourceCode" id="cb581"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb581-1"><a href="ggplot2.html#cb581-1"></a><span class="co"># create the same graph again</span></span>
-<span id="cb581-2"><a href="ggplot2.html#cb581-2"></a><span class="co"># but while creating a smoothing layer</span></span>
-<span id="cb581-3"><a href="ggplot2.html#cb581-3"></a><span class="co"># add the `group` aesthetic and set it to `cyl`</span></span>
-<span id="cb581-4"><a href="ggplot2.html#cb581-4"></a><span class="co"># What have we achieved by doing this?</span></span></code></pre></div>
+<div class="sourceCode" id="cb577"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb577-1"><a href="ggplot2.html#cb577-1"></a><span class="co"># create the same graph again</span></span>
+<span id="cb577-2"><a href="ggplot2.html#cb577-2"></a><span class="co"># but while creating a smoothing layer</span></span>
+<span id="cb577-3"><a href="ggplot2.html#cb577-3"></a><span class="co"># add the `group` aesthetic and set it to `cyl`</span></span>
+<span id="cb577-4"><a href="ggplot2.html#cb577-4"></a><span class="co"># What have we achieved by doing this?</span></span></code></pre></div>
 <div class="fold s o">
-<div class="sourceCode" id="cb582"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb582-1"><a href="ggplot2.html#cb582-1"></a>graph <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span> () <span class="op">+</span><span class="st"> </span><span class="kw">stat_smooth</span>(<span class="kw">aes</span>(<span class="dt">group =</span> cyl), <span class="dt">method =</span> <span class="st">&#39;loess&#39;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb578"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb578-1"><a href="ggplot2.html#cb578-1"></a>graph <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span> () <span class="op">+</span><span class="st"> </span><span class="kw">stat_smooth</span>(<span class="kw">aes</span>(<span class="dt">group =</span> cyl), <span class="dt">method =</span> <span class="st">&#39;loess&#39;</span>)</span></code></pre></div>
 <pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-418-1.png" width="672" /></p>
 </div>
@@ -641,46 +648,46 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Let’s now create a bar chart of the number of cylinders in cars described in the <code>mtcars</code> dataset. For this we willl use the <code>geom_bar</code> helper function and its preset <code>count</code> statistic.</p>
 <hr />
 <p><strong>Exercise 12.12 - bar chart</strong></p>
-<div class="sourceCode" id="cb584"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb584-1"><a href="ggplot2.html#cb584-1"></a><span class="co"># draw a bar chart of the `cyl` variable from the `mtcars` table</span></span>
-<span id="cb584-2"><a href="ggplot2.html#cb584-2"></a><span class="co"># use either the `geom_bar` or `stat_count` function</span></span></code></pre></div>
+<div class="sourceCode" id="cb580"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb580-1"><a href="ggplot2.html#cb580-1"></a><span class="co"># draw a bar chart of the `cyl` variable from the `mtcars` table</span></span>
+<span id="cb580-2"><a href="ggplot2.html#cb580-2"></a><span class="co"># use either the `geom_bar` or `stat_count` function</span></span></code></pre></div>
 <div class="fold s o">
-<div class="sourceCode" id="cb585"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb585-1"><a href="ggplot2.html#cb585-1"></a><span class="co"># draw a bar chart of the `cyl` variable from the `mtcars` table</span></span>
-<span id="cb585-2"><a href="ggplot2.html#cb585-2"></a><span class="co"># use either the `geom_bar` or `stat_count` function</span></span>
-<span id="cb585-3"><a href="ggplot2.html#cb585-3"></a><span class="kw">ggplot</span>(mtcars, <span class="kw">aes</span>(<span class="dt">x =</span> cyl)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_bar</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb581"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb581-1"><a href="ggplot2.html#cb581-1"></a><span class="co"># draw a bar chart of the `cyl` variable from the `mtcars` table</span></span>
+<span id="cb581-2"><a href="ggplot2.html#cb581-2"></a><span class="co"># use either the `geom_bar` or `stat_count` function</span></span>
+<span id="cb581-3"><a href="ggplot2.html#cb581-3"></a><span class="kw">ggplot</span>(mtcars, <span class="kw">aes</span>(<span class="dt">x =</span> cyl)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_bar</span>()</span></code></pre></div>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-420-1.png" width="672" /></p>
 </div>
 <hr />
 <p>We can use a similar representation for our numerical variable. Unlike a bar chart, which directly counts the occurencies of different categories, with numerical variables we first need to group values into so-called <em>bins</em>. After counting the number of observations in each bin we build a graph called a <em>histogram</em>. Again, this is done automatically using the <code>bin</code> statistic, and all we need to do is call the <code>geom_histogram</code> function and specify the number of bins.</p>
 <hr />
 <p><strong>Exercise 12.13 - histogram</strong></p>
-<div class="sourceCode" id="cb586"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb586-1"><a href="ggplot2.html#cb586-1"></a><span class="co"># draw a histogram of the variable `wt` from the` mtcars` table</span></span>
-<span id="cb586-2"><a href="ggplot2.html#cb586-2"></a><span class="co"># group the weights into 4 bins </span></span>
-<span id="cb586-3"><a href="ggplot2.html#cb586-3"></a><span class="co"># use the `geom_histogram` function and the `bins` parameter</span></span></code></pre></div>
+<div class="sourceCode" id="cb582"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb582-1"><a href="ggplot2.html#cb582-1"></a><span class="co"># draw a histogram of the variable `wt` from the` mtcars` table</span></span>
+<span id="cb582-2"><a href="ggplot2.html#cb582-2"></a><span class="co"># group the weights into 4 bins </span></span>
+<span id="cb582-3"><a href="ggplot2.html#cb582-3"></a><span class="co"># use the `geom_histogram` function and the `bins` parameter</span></span></code></pre></div>
 <div class="fold s o">
-<div class="sourceCode" id="cb587"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb587-1"><a href="ggplot2.html#cb587-1"></a><span class="kw">ggplot</span>(mtcars, <span class="kw">aes</span>(<span class="dt">x =</span> wt)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">4</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb583"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb583-1"><a href="ggplot2.html#cb583-1"></a><span class="kw">ggplot</span>(mtcars, <span class="kw">aes</span>(<span class="dt">x =</span> wt)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">4</span>)</span></code></pre></div>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-422-1.png" width="672" /></p>
 </div>
 <hr />
 <p>How does the statistical aspect work “under the hood”? As a rule, one or more new (most commonly aggregated) variables are calculated based on existing variables and then temporarily added as additional columns in the data frame. In the documentation we can find specific information about the names of these new variables and their meaning. For example, if we look at the documentation for the <code>stat_bin</code> function, we can see that it creates the variables named <code>count</code>, <code>ncount</code>, <code>density</code> and <code>ndensity</code>. Any of these variables can be used as a height attribute for our category columns, i.e. as a value to put on the <em>y</em> aesthetic. The reason why we did not explicitly state this aesthetic in the previous example is the fact that the statistics function automatically selects the aggregate function that is expected to be one most commonly used (in our case it was <code>count</code>). If we want to use a different aggregation variable, we can explicitly set the <em>y</em> aesthetic to one of the other variables, but we need to leverage the <code>ggplot2</code> convention where we add a prefix and suffix <code>..</code> to the names of such variables, like in this example:</p>
-<div class="sourceCode" id="cb588"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb588-1"><a href="ggplot2.html#cb588-1"></a><span class="kw">aes</span> (<span class="dt">x =</span> hp, <span class="dt">y =</span> ..density ..)</span></code></pre></div>
+<div class="sourceCode" id="cb584"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb584-1"><a href="ggplot2.html#cb584-1"></a><span class="kw">aes</span> (<span class="dt">x =</span> hp, <span class="dt">y =</span> ..density ..)</span></code></pre></div>
 <p>Let’s try this in the following assignment.</p>
 <p><strong>Exercise 12.14 - explicitly specifying the aggregation variable</strong></p>
-<div class="sourceCode" id="cb589"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb589-1"><a href="ggplot2.html#cb589-1"></a><span class="co"># draw a histogram of the variable `wt` from the` mtcars` table</span></span>
-<span id="cb589-2"><a href="ggplot2.html#cb589-2"></a><span class="co"># group the weights into 4 bins </span></span>
-<span id="cb589-3"><a href="ggplot2.html#cb589-3"></a><span class="co"># use the `geom_histogram` function and the `bins` parameter</span></span>
-<span id="cb589-4"><a href="ggplot2.html#cb589-4"></a><span class="co"># set `ncount` as the aggregation variable</span></span></code></pre></div>
+<div class="sourceCode" id="cb585"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb585-1"><a href="ggplot2.html#cb585-1"></a><span class="co"># draw a histogram of the variable `wt` from the` mtcars` table</span></span>
+<span id="cb585-2"><a href="ggplot2.html#cb585-2"></a><span class="co"># group the weights into 4 bins </span></span>
+<span id="cb585-3"><a href="ggplot2.html#cb585-3"></a><span class="co"># use the `geom_histogram` function and the `bins` parameter</span></span>
+<span id="cb585-4"><a href="ggplot2.html#cb585-4"></a><span class="co"># set `ncount` as the aggregation variable</span></span></code></pre></div>
 <div class="fold s o">
-<div class="sourceCode" id="cb590"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb590-1"><a href="ggplot2.html#cb590-1"></a><span class="kw">ggplot</span>(mtcars, <span class="kw">aes</span>(<span class="dt">x =</span> wt, <span class="dt">y =</span> ..ncount..)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">4</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb586"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb586-1"><a href="ggplot2.html#cb586-1"></a><span class="kw">ggplot</span>(mtcars, <span class="kw">aes</span>(<span class="dt">x =</span> wt, <span class="dt">y =</span> ..ncount..)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">4</span>)</span></code></pre></div>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-425-1.png" width="672" /></p>
 </div>
 <hr />
 <p>Let’s go one step further. Draw the same histogram (with <em>default</em> aggregation), but show how many <strong>cylinders</strong> are represented in each weight category. You can easily do this by adding a <code>fill</code> aesthetic to the geometry which will “fill” the columns with chosen color (as opposed to the <code>color</code> aesthetic that would paint the lines around a rectangles which represent columns in the bar chart).</p>
 <hr />
 <p><strong>Exercise 12.15 - the fill aesthetic</strong></p>
-<div class="sourceCode" id="cb591"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb591-1"><a href="ggplot2.html#cb591-1"></a><span class="co"># draw a histogram of the variable `wt`</span></span>
-<span id="cb591-2"><a href="ggplot2.html#cb591-2"></a><span class="co"># add the `cyl` variable on the `fill` aesthetic</span></span></code></pre></div>
+<div class="sourceCode" id="cb587"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb587-1"><a href="ggplot2.html#cb587-1"></a><span class="co"># draw a histogram of the variable `wt`</span></span>
+<span id="cb587-2"><a href="ggplot2.html#cb587-2"></a><span class="co"># add the `cyl` variable on the `fill` aesthetic</span></span></code></pre></div>
 <div class="fold s o">
-<div class="sourceCode" id="cb592"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb592-1"><a href="ggplot2.html#cb592-1"></a><span class="kw">ggplot</span>(mtcars, <span class="kw">aes</span>(<span class="dt">x =</span> wt, <span class="dt">fill =</span> cyl)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_histogram</span> (<span class="dt">bins =</span> <span class="dv">4</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb588"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb588-1"><a href="ggplot2.html#cb588-1"></a><span class="kw">ggplot</span>(mtcars, <span class="kw">aes</span>(<span class="dt">x =</span> wt, <span class="dt">fill =</span> cyl)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_histogram</span> (<span class="dt">bins =</span> <span class="dv">4</span>)</span></code></pre></div>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-427-1.png" width="672" /></p>
 </div>
 <hr />
@@ -688,9 +695,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><strong>Position</strong> is an aspect of the grammar of graphics that allows you to “rearrange” the position of a particular aspect of a graph to achieve better representation clarity. In the previous example, we have already observed the “stratification” of columns based on a chosen categorical variable. Under the hood, the function actually used the <code>stack</code> positional aspect which stacks columns one on top of the other. An alternative to this might be to set the <code>position</code> aspect to <code>dodge</code> which would draw the subgroup columns next to each other.</p>
 <hr />
 <p><strong>Exercise 12.16 - <code>dodge</code> positional aspect</strong></p>
-<div class="sourceCode" id="cb593"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb593-1"><a href="ggplot2.html#cb593-1"></a><span class="co"># draw the same histogram, but set the `position` aspect ratio to `dodge` </span></span></code></pre></div>
+<div class="sourceCode" id="cb589"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb589-1"><a href="ggplot2.html#cb589-1"></a><span class="co"># draw the same histogram, but set the `position` aspect ratio to `dodge` </span></span></code></pre></div>
 <div class="fold s o">
-<div class="sourceCode" id="cb594"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb594-1"><a href="ggplot2.html#cb594-1"></a><span class="kw">ggplot</span>(mtcars, <span class="kw">aes</span> (<span class="dt">x =</span> wt, <span class="dt">fill =</span> cyl)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_histogram</span> (<span class="dt">bins =</span> <span class="dv">4</span>, <span class="dt">position =</span> <span class="st">&quot;dodge&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb590"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb590-1"><a href="ggplot2.html#cb590-1"></a><span class="kw">ggplot</span>(mtcars, <span class="kw">aes</span> (<span class="dt">x =</span> wt, <span class="dt">fill =</span> cyl)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_histogram</span> (<span class="dt">bins =</span> <span class="dv">4</span>, <span class="dt">position =</span> <span class="st">&quot;dodge&quot;</span>)</span></code></pre></div>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-429-1.png" width="672" /></p>
 </div>
 <hr />
@@ -698,11 +705,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>What happens if we “turn off” the positional aspect by using the <code>identity</code> value?</p>
 <hr />
 <p><strong>Exercise 12.17 - <code>identity</code> positional aspect</strong></p>
-<div class="sourceCode" id="cb595"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb595-1"><a href="ggplot2.html#cb595-1"></a><span class="co"># draw the same histogram, but set the `position` aspect ratio to `identity` </span></span>
-<span id="cb595-2"><a href="ggplot2.html#cb595-2"></a><span class="co"># also set the `alpha` geometry parameter to `0.2`</span></span></code></pre></div>
+<div class="sourceCode" id="cb591"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb591-1"><a href="ggplot2.html#cb591-1"></a><span class="co"># draw the same histogram, but set the `position` aspect ratio to `identity` </span></span>
+<span id="cb591-2"><a href="ggplot2.html#cb591-2"></a><span class="co"># also set the `alpha` geometry parameter to `0.2`</span></span></code></pre></div>
 <div class="fold s o">
-<div class="sourceCode" id="cb596"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb596-1"><a href="ggplot2.html#cb596-1"></a><span class="kw">ggplot</span>(mtcars, <span class="kw">aes</span> (<span class="dt">x =</span> wt, <span class="dt">fill =</span> cyl)) <span class="op">+</span></span>
-<span id="cb596-2"><a href="ggplot2.html#cb596-2"></a><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">4</span>, <span class="dt">position =</span> <span class="st">&quot;identity&quot;</span>, <span class="dt">alpha =</span> <span class="fl">0.4</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb592"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb592-1"><a href="ggplot2.html#cb592-1"></a><span class="kw">ggplot</span>(mtcars, <span class="kw">aes</span> (<span class="dt">x =</span> wt, <span class="dt">fill =</span> cyl)) <span class="op">+</span></span>
+<span id="cb592-2"><a href="ggplot2.html#cb592-2"></a><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">4</span>, <span class="dt">position =</span> <span class="st">&quot;identity&quot;</span>, <span class="dt">alpha =</span> <span class="fl">0.4</span>)</span></code></pre></div>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-431-1.png" width="672" /></p>
 </div>
 <hr />
@@ -710,12 +717,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Let’s show another positional aspect - <code>fill</code> (don’t confuse this with the <code>fill</code> aesthetic!).</p>
 <hr />
 <p><strong>Exercise 12.18 - <code>fill</code> positional aspect</strong></p>
-<div class="sourceCode" id="cb597"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb597-1"><a href="ggplot2.html#cb597-1"></a><span class="co"># draw the same histogram, but set the `position` aspect ratio to `fill` </span></span>
-<span id="cb597-2"><a href="ggplot2.html#cb597-2"></a><span class="co"># for better visibility, frame the rectangles with a black line</span></span>
-<span id="cb597-3"><a href="ggplot2.html#cb597-3"></a><span class="co"># explain the result. What have we achieved with this histogram?</span></span></code></pre></div>
+<div class="sourceCode" id="cb593"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb593-1"><a href="ggplot2.html#cb593-1"></a><span class="co"># draw the same histogram, but set the `position` aspect ratio to `fill` </span></span>
+<span id="cb593-2"><a href="ggplot2.html#cb593-2"></a><span class="co"># for better visibility, frame the rectangles with a black line</span></span>
+<span id="cb593-3"><a href="ggplot2.html#cb593-3"></a><span class="co"># explain the result. What have we achieved with this histogram?</span></span></code></pre></div>
 <div class="fold s o">
-<div class="sourceCode" id="cb598"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb598-1"><a href="ggplot2.html#cb598-1"></a><span class="kw">ggplot</span>(mtcars, <span class="kw">aes</span>(<span class="dt">x =</span> wt, <span class="dt">fill =</span> cyl)) <span class="op">+</span></span>
-<span id="cb598-2"><a href="ggplot2.html#cb598-2"></a><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">4</span>, <span class="dt">color =</span> <span class="st">&quot;black&quot;</span>, <span class="dt">position =</span> <span class="st">&quot;fill&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb594"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb594-1"><a href="ggplot2.html#cb594-1"></a><span class="kw">ggplot</span>(mtcars, <span class="kw">aes</span>(<span class="dt">x =</span> wt, <span class="dt">fill =</span> cyl)) <span class="op">+</span></span>
+<span id="cb594-2"><a href="ggplot2.html#cb594-2"></a><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">4</span>, <span class="dt">color =</span> <span class="st">&quot;black&quot;</span>, <span class="dt">position =</span> <span class="st">&quot;fill&quot;</span>)</span></code></pre></div>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-433-1.png" width="672" /></p>
 </div>
 <hr />
@@ -723,24 +730,24 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>To demonstrate the jittering aspect in action, we will create an “artificial” data frame of 100 partially overlapping observations.</p>
 <hr />
 <p><strong>Exercise 12.19 - <code>jitter</code> positional aspect</strong></p>
-<div class="sourceCode" id="cb599"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb599-1"><a href="ggplot2.html#cb599-1"></a>df &lt;-<span class="st"> </span><span class="kw">data.frame</span>( <span class="dt">x =</span> <span class="kw">c</span>(<span class="kw">rep</span>(<span class="dv">1</span>, <span class="dv">90</span>), <span class="kw">rep</span>(<span class="dv">2</span>, <span class="dv">9</span>), <span class="dv">3</span>),</span>
-<span id="cb599-2"><a href="ggplot2.html#cb599-2"></a>                  <span class="dt">y =</span> <span class="kw">c</span>(<span class="kw">rep</span>(<span class="dv">1</span>, <span class="dv">70</span>), <span class="kw">rep</span>(<span class="dv">2</span>, <span class="dv">25</span>), <span class="kw">rep</span>(<span class="dv">3</span>, <span class="dv">5</span>)))</span>
-<span id="cb599-3"><a href="ggplot2.html#cb599-3"></a></span>
-<span id="cb599-4"><a href="ggplot2.html#cb599-4"></a><span class="co"># create a scatterplot of the `df` data frame</span></span></code></pre></div>
+<div class="sourceCode" id="cb595"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb595-1"><a href="ggplot2.html#cb595-1"></a>df &lt;-<span class="st"> </span><span class="kw">data.frame</span>( <span class="dt">x =</span> <span class="kw">c</span>(<span class="kw">rep</span>(<span class="dv">1</span>, <span class="dv">90</span>), <span class="kw">rep</span>(<span class="dv">2</span>, <span class="dv">9</span>), <span class="dv">3</span>),</span>
+<span id="cb595-2"><a href="ggplot2.html#cb595-2"></a>                  <span class="dt">y =</span> <span class="kw">c</span>(<span class="kw">rep</span>(<span class="dv">1</span>, <span class="dv">70</span>), <span class="kw">rep</span>(<span class="dv">2</span>, <span class="dv">25</span>), <span class="kw">rep</span>(<span class="dv">3</span>, <span class="dv">5</span>)))</span>
+<span id="cb595-3"><a href="ggplot2.html#cb595-3"></a></span>
+<span id="cb595-4"><a href="ggplot2.html#cb595-4"></a><span class="co"># create a scatterplot of the `df` data frame</span></span></code></pre></div>
 <div class="fold s o">
-<div class="sourceCode" id="cb600"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb600-1"><a href="ggplot2.html#cb600-1"></a><span class="co"># create a scatterplot of the `df` data frame</span></span>
-<span id="cb600-2"><a href="ggplot2.html#cb600-2"></a><span class="kw">ggplot</span>(df, <span class="kw">aes</span>(<span class="dt">x =</span> x, <span class="dt">y =</span> y)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb596"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb596-1"><a href="ggplot2.html#cb596-1"></a><span class="co"># create a scatterplot of the `df` data frame</span></span>
+<span id="cb596-2"><a href="ggplot2.html#cb596-2"></a><span class="kw">ggplot</span>(df, <span class="kw">aes</span>(<span class="dt">x =</span> x, <span class="dt">y =</span> y)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>()</span></code></pre></div>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-435-1.png" width="672" /></p>
 </div>
 <hr />
 <p><strong>Exercise 12.20 - <code>jitter</code> positional aspect (2)</strong></p>
-<div class="sourceCode" id="cb601"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb601-1"><a href="ggplot2.html#cb601-1"></a><span class="co"># display the same graph, but instead of using `geom_point` use `geom_jitter`</span></span>
-<span id="cb601-2"><a href="ggplot2.html#cb601-2"></a><span class="co"># set `width` and` height` parameters to 0.3 (30% added noise)</span></span>
-<span id="cb601-3"><a href="ggplot2.html#cb601-3"></a><span class="co"># additionally set the `color` geometry parameter to &#39;blue&#39;</span></span>
-<span id="cb601-4"><a href="ggplot2.html#cb601-4"></a><span class="co"># and `alpha` parameter (transparency) to 0.4</span></span></code></pre></div>
+<div class="sourceCode" id="cb597"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb597-1"><a href="ggplot2.html#cb597-1"></a><span class="co"># display the same graph, but instead of using `geom_point` use `geom_jitter`</span></span>
+<span id="cb597-2"><a href="ggplot2.html#cb597-2"></a><span class="co"># set `width` and` height` parameters to 0.3 (30% added noise)</span></span>
+<span id="cb597-3"><a href="ggplot2.html#cb597-3"></a><span class="co"># additionally set the `color` geometry parameter to &#39;blue&#39;</span></span>
+<span id="cb597-4"><a href="ggplot2.html#cb597-4"></a><span class="co"># and `alpha` parameter (transparency) to 0.4</span></span></code></pre></div>
 <div class="fold s o">
-<div class="sourceCode" id="cb602"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb602-1"><a href="ggplot2.html#cb602-1"></a><span class="kw">ggplot</span>(df, <span class="kw">aes</span>(<span class="dt">x =</span> x, <span class="dt">y =</span> y)) <span class="op">+</span></span>
-<span id="cb602-2"><a href="ggplot2.html#cb602-2"></a><span class="st">  </span><span class="kw">geom_jitter</span>(<span class="dt">width =</span> <span class="fl">0.3</span>, <span class="dt">height =</span> <span class="fl">0.3</span>, <span class="dt">alpha =</span> <span class="fl">0.4</span>, <span class="dt">color =</span> <span class="st">&quot;blue&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb598"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb598-1"><a href="ggplot2.html#cb598-1"></a><span class="kw">ggplot</span>(df, <span class="kw">aes</span>(<span class="dt">x =</span> x, <span class="dt">y =</span> y)) <span class="op">+</span></span>
+<span id="cb598-2"><a href="ggplot2.html#cb598-2"></a><span class="st">  </span><span class="kw">geom_jitter</span>(<span class="dt">width =</span> <span class="fl">0.3</span>, <span class="dt">height =</span> <span class="fl">0.3</span>, <span class="dt">alpha =</span> <span class="fl">0.4</span>, <span class="dt">color =</span> <span class="st">&quot;blue&quot;</span>)</span></code></pre></div>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-437-1.png" width="672" /></p>
 </div>
 <hr />
@@ -752,17 +759,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Saving graphs can be done by calling the function corresponding to the format in which we want to store the image (eg the <code>pdf</code> function will save the <em>next</em> image to a <em>pdf</em> file), but the <code>ggplot2</code> package offers a more convenient way - the <code>ggsave</code> function will store <em>the last drawn</em> graph into a file of the selected name, whereby the image format will be <em>deduced</em> from the file extension we choose. This method is better because we have the chance to see the graph first and then decide on storage.</p>
 <hr />
 <p><strong>Exercise 12.21 - saving graph to file</strong></p>
-<div class="sourceCode" id="cb603"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb603-1"><a href="ggplot2.html#cb603-1"></a><span class="co"># save the following graph in the files `figures1.pdf` and` figures1.png`</span></span>
-<span id="cb603-2"><a href="ggplot2.html#cb603-2"></a><span class="kw">ggplot</span>(mtcars, <span class="kw">aes</span>(<span class="dt">x =</span> hp, <span class="dt">y =</span> mpg, <span class="dt">col =</span> <span class="kw">as.factor</span> (cyl))) <span class="op">+</span></span>
-<span id="cb603-3"><a href="ggplot2.html#cb603-3"></a><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></span>
-<span id="cb603-4"><a href="ggplot2.html#cb603-4"></a><span class="kw">geom_smooth</span> (<span class="kw">aes</span>(<span class="dt">x =</span> hp, <span class="dt">y =</span> mpg), <span class="dt">method =</span> <span class="st">&#39;loess&#39;</span>,</span>
-<span id="cb603-5"><a href="ggplot2.html#cb603-5"></a>            <span class="dt">linetype =</span> <span class="dv">4</span>, <span class="dt">color =</span> <span class="st">&quot;gray&quot;</span>, <span class="dt">se =</span> F, <span class="dt">inherit.aes =</span> F) <span class="op">+</span></span>
-<span id="cb603-6"><a href="ggplot2.html#cb603-6"></a><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;horsepower&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;fuel consumption&quot;</span>, <span class="dt">col =</span> <span class="st">&quot;number of cylinders&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb599"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb599-1"><a href="ggplot2.html#cb599-1"></a><span class="co"># save the following graph in the files `figures1.pdf` and` figures1.png`</span></span>
+<span id="cb599-2"><a href="ggplot2.html#cb599-2"></a><span class="kw">ggplot</span>(mtcars, <span class="kw">aes</span>(<span class="dt">x =</span> hp, <span class="dt">y =</span> mpg, <span class="dt">col =</span> <span class="kw">as.factor</span> (cyl))) <span class="op">+</span></span>
+<span id="cb599-3"><a href="ggplot2.html#cb599-3"></a><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></span>
+<span id="cb599-4"><a href="ggplot2.html#cb599-4"></a><span class="kw">geom_smooth</span> (<span class="kw">aes</span>(<span class="dt">x =</span> hp, <span class="dt">y =</span> mpg), <span class="dt">method =</span> <span class="st">&#39;loess&#39;</span>,</span>
+<span id="cb599-5"><a href="ggplot2.html#cb599-5"></a>            <span class="dt">linetype =</span> <span class="dv">4</span>, <span class="dt">color =</span> <span class="st">&quot;gray&quot;</span>, <span class="dt">se =</span> F, <span class="dt">inherit.aes =</span> F) <span class="op">+</span></span>
+<span id="cb599-6"><a href="ggplot2.html#cb599-6"></a><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;horsepower&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;fuel consumption&quot;</span>, <span class="dt">col =</span> <span class="st">&quot;number of cylinders&quot;</span>)</span></code></pre></div>
 <pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-438-1.png" width="672" /></p>
 <div class="fold s">
-<div class="sourceCode" id="cb605"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb605-1"><a href="ggplot2.html#cb605-1"></a><span class="kw">ggsave</span>(<span class="st">&quot;figure1.pdf&quot;</span>)</span>
-<span id="cb605-2"><a href="ggplot2.html#cb605-2"></a><span class="kw">ggsave</span>(<span class="st">&quot;figure1.png&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb601"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb601-1"><a href="ggplot2.html#cb601-1"></a><span class="kw">ggsave</span>(<span class="st">&quot;figure1.pdf&quot;</span>)</span>
+<span id="cb601-2"><a href="ggplot2.html#cb601-2"></a><span class="kw">ggsave</span>(<span class="st">&quot;figure1.png&quot;</span>)</span></code></pre></div>
 </div>
 <hr />
 </div>
@@ -789,11 +796,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Let’s try to leverage the scaling aspect in the following assignments. We will use a new dataset - <code>diamonds</code> from the <code>ggplot2</code> itself. This dataset describes various features of diamonds along with their estimated value.</p>
 <hr />
 <p><strong>Exercise 12.22 - getting acquainted with <code>diamonds</code> dataset</strong></p>
-<div class="sourceCode" id="cb606"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb606-1"><a href="ggplot2.html#cb606-1"></a><span class="co"># briefly explore the `diamonds` data frame</span></span></code></pre></div>
+<div class="sourceCode" id="cb602"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb602-1"><a href="ggplot2.html#cb602-1"></a><span class="co"># briefly explore the `diamonds` data frame</span></span></code></pre></div>
 <div class="fold s o">
-<div class="sourceCode" id="cb607"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb607-1"><a href="ggplot2.html#cb607-1"></a><span class="co"># briefly explore the `diamonds` data frame</span></span>
-<span id="cb607-2"><a href="ggplot2.html#cb607-2"></a><span class="kw">glimpse</span>(diamonds)</span>
-<span id="cb607-3"><a href="ggplot2.html#cb607-3"></a><span class="kw">head</span>(diamonds)</span></code></pre></div>
+<div class="sourceCode" id="cb603"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb603-1"><a href="ggplot2.html#cb603-1"></a><span class="co"># briefly explore the `diamonds` data frame</span></span>
+<span id="cb603-2"><a href="ggplot2.html#cb603-2"></a><span class="kw">glimpse</span>(diamonds)</span>
+<span id="cb603-3"><a href="ggplot2.html#cb603-3"></a><span class="kw">head</span>(diamonds)</span></code></pre></div>
 <pre><code>## Rows: 53,940
 ## Columns: 10
 ## $ carat   &lt;dbl&gt; 0.23, 0.21, 0.23, 0.29, 0.31, 0.24, 0.24, 0.26, 0.22, 0.23,...
@@ -819,33 +826,37 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <hr />
 <p>This dataset has around 54,000 observations which might slow down the drawing of our graphs somewhat. Let’s reduce it by sampling 5000 random observations.</p>
 <p><strong>Exercise 12.23 - sampling the <code>diamonds</code> data frame</strong></p>
-<div class="sourceCode" id="cb609"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb609-1"><a href="ggplot2.html#cb609-1"></a><span class="kw">set.seed</span>(<span class="dv">1001</span>)</span>
-<span id="cb609-2"><a href="ggplot2.html#cb609-2"></a><span class="co"># sample 5000 random rows from `diamonds` data frame</span></span>
-<span id="cb609-3"><a href="ggplot2.html#cb609-3"></a><span class="co"># and store them in a data frame called `diamondsSample`</span></span></code></pre></div>
+<div class="sourceCode" id="cb605"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb605-1"><a href="ggplot2.html#cb605-1"></a><span class="kw">set.seed</span>(<span class="dv">1001</span>)</span>
+<span id="cb605-2"><a href="ggplot2.html#cb605-2"></a><span class="co"># sample 5000 random rows from `diamonds` data frame</span></span>
+<span id="cb605-3"><a href="ggplot2.html#cb605-3"></a><span class="co"># and store them in a data frame called `diamondsSample`</span></span></code></pre></div>
 <div class="fold s o">
-<div class="sourceCode" id="cb610"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb610-1"><a href="ggplot2.html#cb610-1"></a><span class="kw">set.seed</span> (<span class="dv">1001</span>)</span>
-<span id="cb610-2"><a href="ggplot2.html#cb610-2"></a><span class="co"># sample 5000 random rows from `diamonds` data frame</span></span>
-<span id="cb610-3"><a href="ggplot2.html#cb610-3"></a><span class="co"># and store them in a data frame called `diamondsSample`</span></span>
-<span id="cb610-4"><a href="ggplot2.html#cb610-4"></a>diamondsSample &lt;-<span class="st"> </span><span class="kw">sample_n</span>(diamonds, <span class="dv">5000</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb606"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb606-1"><a href="ggplot2.html#cb606-1"></a><span class="kw">set.seed</span> (<span class="dv">1001</span>)</span>
+<span id="cb606-2"><a href="ggplot2.html#cb606-2"></a><span class="co"># sample 5000 random rows from `diamonds` data frame</span></span>
+<span id="cb606-3"><a href="ggplot2.html#cb606-3"></a><span class="co"># and store them in a data frame called `diamondsSample`</span></span>
+<span id="cb606-4"><a href="ggplot2.html#cb606-4"></a>diamondsSample &lt;-<span class="st"> </span><span class="kw">sample_n</span>(diamonds, <span class="dv">5000</span>)</span></code></pre></div>
 </div>
 <hr />
 <p>Let’s now take a scatterplot which shows the diamonds` volume, price and color and fine-tune its aesthetics with the help of the scale aspect.</p>
+</div>
+</div>
+<div id="tu" class="section level2">
+<h2><span class="header-section-number">12.4</span> TU</h2>
 <p><strong>Exercise 12.24 - tweaking the scaling aspect of aesthetics</strong></p>
-<div class="sourceCode" id="cb611"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb611-1"><a href="ggplot2.html#cb611-1"></a><span class="co"># &quot;fix&quot; the axes and the legend of the graph </span></span>
-<span id="cb611-2"><a href="ggplot2.html#cb611-2"></a><span class="co"># - call the x and y axes &quot;volume in mm3&quot; and &quot;price in $&quot;</span></span>
-<span id="cb611-3"><a href="ggplot2.html#cb611-3"></a><span class="co"># - call the color legend &quot;color quality&quot;</span></span>
-<span id="cb611-4"><a href="ggplot2.html#cb611-4"></a><span class="co"># - limit x axis from 0 to 500</span></span>
-<span id="cb611-5"><a href="ggplot2.html#cb611-5"></a><span class="co"># - set the y axis breaks on 1000, 5000, 10000 and 20000 </span></span>
-<span id="cb611-6"><a href="ggplot2.html#cb611-6"></a><span class="co"># - instead of D-J label the color &quot;quality&quot; as numbers from 1 to 7</span></span>
-<span id="cb611-7"><a href="ggplot2.html#cb611-7"></a><span class="kw">ggplot</span>(diamondsSample, <span class="kw">aes</span> (x <span class="op">*</span><span class="st"> </span>y <span class="op">*</span><span class="st"> </span>z, price, <span class="dt">color =</span> color)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span> (<span class="dt">alpha =</span> <span class="fl">0.4</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb607"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb607-1"><a href="ggplot2.html#cb607-1"></a><span class="co"># &quot;fix&quot; the axes and the legend of the graph </span></span>
+<span id="cb607-2"><a href="ggplot2.html#cb607-2"></a><span class="co"># - call the x and y axes &quot;volume in mm3&quot; and &quot;price in $&quot;</span></span>
+<span id="cb607-3"><a href="ggplot2.html#cb607-3"></a><span class="co"># - call the color legend &quot;color quality&quot;</span></span>
+<span id="cb607-4"><a href="ggplot2.html#cb607-4"></a><span class="co"># - limit x axis from 0 to 500</span></span>
+<span id="cb607-5"><a href="ggplot2.html#cb607-5"></a><span class="co"># - set the y axis breaks on 1000, 5000, 10000 and 20000 </span></span>
+<span id="cb607-6"><a href="ggplot2.html#cb607-6"></a><span class="co"># - instead of D-J label the color &quot;quality&quot; as numbers from 1 to 7</span></span>
+<span id="cb607-7"><a href="ggplot2.html#cb607-7"></a><span class="kw">ggplot</span>(diamondsSample, <span class="kw">aes</span> (x <span class="op">*</span><span class="st"> </span>y <span class="op">*</span><span class="st"> </span>z, price, <span class="dt">color =</span> color)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span> (<span class="dt">alpha =</span> <span class="fl">0.4</span>)</span></code></pre></div>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-444-1.png" width="672" /></p>
 <div class="fold s o">
-<div class="sourceCode" id="cb612"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb612-1"><a href="ggplot2.html#cb612-1"></a><span class="kw">ggplot</span>(diamondsSample, <span class="kw">aes</span>(x <span class="op">*</span><span class="st"> </span>y <span class="op">*</span><span class="st"> </span>z, price, <span class="dt">color =</span> color)) <span class="op">+</span></span>
-<span id="cb612-2"><a href="ggplot2.html#cb612-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">alpha =</span> <span class="fl">0.6</span>) <span class="op">+</span></span>
-<span id="cb612-3"><a href="ggplot2.html#cb612-3"></a><span class="st">  </span><span class="kw">scale_x_continuous</span>(<span class="dt">name =</span> <span class="st">&quot;volume in mm3&quot;</span>, <span class="dt">limits =</span> <span class="kw">c</span> (<span class="dv">0</span>, <span class="dv">450</span>)) <span class="op">+</span></span>
-<span id="cb612-4"><a href="ggplot2.html#cb612-4"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">name =</span> <span class="st">&quot;price in $&quot;</span>,</span>
-<span id="cb612-5"><a href="ggplot2.html#cb612-5"></a>                     <span class="dt">breaks =</span> <span class="kw">c</span> (<span class="dv">1000</span>, <span class="dv">5000</span>, <span class="dv">10000</span>, <span class="dv">15000</span>)) <span class="op">+</span></span>
-<span id="cb612-6"><a href="ggplot2.html#cb612-6"></a><span class="st">  </span><span class="kw">scale_color_discrete</span>(<span class="dt">name =</span> <span class="st">&quot;color quality&quot;</span>, <span class="dt">labels =</span> <span class="dv">1</span><span class="op">:</span><span class="dv">7</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb608"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb608-1"><a href="ggplot2.html#cb608-1"></a><span class="kw">ggplot</span>(diamondsSample, <span class="kw">aes</span>(x <span class="op">*</span><span class="st"> </span>y <span class="op">*</span><span class="st"> </span>z, price, <span class="dt">color =</span> color)) <span class="op">+</span></span>
+<span id="cb608-2"><a href="ggplot2.html#cb608-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">alpha =</span> <span class="fl">0.6</span>) <span class="op">+</span></span>
+<span id="cb608-3"><a href="ggplot2.html#cb608-3"></a><span class="st">  </span><span class="kw">scale_x_continuous</span>(<span class="dt">name =</span> <span class="st">&quot;volume in mm3&quot;</span>, <span class="dt">limits =</span> <span class="kw">c</span> (<span class="dv">0</span>, <span class="dv">450</span>)) <span class="op">+</span></span>
+<span id="cb608-4"><a href="ggplot2.html#cb608-4"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">name =</span> <span class="st">&quot;price in $&quot;</span>,</span>
+<span id="cb608-5"><a href="ggplot2.html#cb608-5"></a>                     <span class="dt">breaks =</span> <span class="kw">c</span> (<span class="dv">1000</span>, <span class="dv">5000</span>, <span class="dv">10000</span>, <span class="dv">15000</span>)) <span class="op">+</span></span>
+<span id="cb608-6"><a href="ggplot2.html#cb608-6"></a><span class="st">  </span><span class="kw">scale_color_discrete</span>(<span class="dt">name =</span> <span class="st">&quot;color quality&quot;</span>, <span class="dt">labels =</span> <span class="dv">1</span><span class="op">:</span><span class="dv">7</span>)</span></code></pre></div>
 <pre><code>## Warning: Removed 3 rows containing missing values (geom_point).</code></pre>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-445-1.png" width="672" /></p>
 </div>
@@ -861,20 +872,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <hr />
 <p><strong>Exercise 12.25 - logarithmic scale</strong></p>
-<div class="sourceCode" id="cb614"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb614-1"><a href="ggplot2.html#cb614-1"></a><span class="co"># change the y axis to a logarithmic one</span></span>
-<span id="cb614-2"><a href="ggplot2.html#cb614-2"></a><span class="kw">ggplot</span>(diamondsSample, <span class="kw">aes</span> (x <span class="op">*</span><span class="st"> </span>y <span class="op">*</span><span class="st"> </span>z, price, <span class="dt">color =</span> color)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span> (<span class="dt">na.rm =</span> T, <span class="dt">alpha =</span> <span class="fl">0.6</span>) <span class="op">+</span></span>
-<span id="cb614-3"><a href="ggplot2.html#cb614-3"></a><span class="st">  </span><span class="kw">scale_x_continuous</span> (<span class="dt">name =</span> <span class="st">&quot;volume in mm3&quot;</span>, <span class="dt">limits =</span> <span class="kw">c</span> (<span class="dv">0</span>, <span class="dv">450</span>)) <span class="op">+</span></span>
-<span id="cb614-4"><a href="ggplot2.html#cb614-4"></a><span class="st">  </span><span class="kw">scale_y_continuous</span> (<span class="dt">name =</span> <span class="st">&quot;price in $&quot;</span>, <span class="dt">breaks =</span> <span class="kw">c</span> (<span class="dv">1000</span>, <span class="dv">5000</span>, <span class="dv">10000</span>, <span class="dv">15000</span>)) <span class="op">+</span></span>
-<span id="cb614-5"><a href="ggplot2.html#cb614-5"></a><span class="st">  </span><span class="kw">scale_color_discrete</span> (<span class="dt">name =</span> <span class="st">&quot;color quality&quot;</span>, <span class="dt">labels =</span> <span class="dv">1</span><span class="op">:</span><span class="st"> </span><span class="dv">7</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb610"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb610-1"><a href="ggplot2.html#cb610-1"></a><span class="co"># change the y axis to a logarithmic one</span></span>
+<span id="cb610-2"><a href="ggplot2.html#cb610-2"></a><span class="kw">ggplot</span>(diamondsSample, <span class="kw">aes</span> (x <span class="op">*</span><span class="st"> </span>y <span class="op">*</span><span class="st"> </span>z, price, <span class="dt">color =</span> color)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span> (<span class="dt">na.rm =</span> T, <span class="dt">alpha =</span> <span class="fl">0.6</span>) <span class="op">+</span></span>
+<span id="cb610-3"><a href="ggplot2.html#cb610-3"></a><span class="st">  </span><span class="kw">scale_x_continuous</span> (<span class="dt">name =</span> <span class="st">&quot;volume in mm3&quot;</span>, <span class="dt">limits =</span> <span class="kw">c</span> (<span class="dv">0</span>, <span class="dv">450</span>)) <span class="op">+</span></span>
+<span id="cb610-4"><a href="ggplot2.html#cb610-4"></a><span class="st">  </span><span class="kw">scale_y_continuous</span> (<span class="dt">name =</span> <span class="st">&quot;price in $&quot;</span>, <span class="dt">breaks =</span> <span class="kw">c</span> (<span class="dv">1000</span>, <span class="dv">5000</span>, <span class="dv">10000</span>, <span class="dv">15000</span>)) <span class="op">+</span></span>
+<span id="cb610-5"><a href="ggplot2.html#cb610-5"></a><span class="st">  </span><span class="kw">scale_color_discrete</span> (<span class="dt">name =</span> <span class="st">&quot;color quality&quot;</span>, <span class="dt">labels =</span> <span class="dv">1</span><span class="op">:</span><span class="st"> </span><span class="dv">7</span>)</span></code></pre></div>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-446-1.png" width="672" /></p>
 <div class="fold s o">
-<div class="sourceCode" id="cb615"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb615-1"><a href="ggplot2.html#cb615-1"></a><span class="co"># change the y axis to a logarithmic one</span></span>
-<span id="cb615-2"><a href="ggplot2.html#cb615-2"></a><span class="kw">ggplot</span>(diamondsSample, <span class="kw">aes</span> (x <span class="op">*</span><span class="st"> </span>y <span class="op">*</span><span class="st"> </span>z, price, <span class="dt">color =</span> color)) <span class="op">+</span></span>
-<span id="cb615-3"><a href="ggplot2.html#cb615-3"></a><span class="st">  </span><span class="kw">geom_point</span> (<span class="dt">na.rm =</span> T, <span class="dt">alpha =</span> <span class="fl">0.6</span>) <span class="op">+</span></span>
-<span id="cb615-4"><a href="ggplot2.html#cb615-4"></a><span class="st">  </span><span class="kw">scale_x_continuous</span> (<span class="dt">name =</span> <span class="st">&quot;volume in mm3&quot;</span>, <span class="dt">limits =</span> <span class="kw">c</span> (<span class="dv">0</span>, <span class="dv">450</span>)) <span class="op">+</span></span>
-<span id="cb615-5"><a href="ggplot2.html#cb615-5"></a><span class="st">  </span><span class="kw">scale_y_log10</span> (<span class="dt">name =</span> <span class="st">&quot;price in $&quot;</span>,</span>
-<span id="cb615-6"><a href="ggplot2.html#cb615-6"></a>                <span class="dt">breaks =</span> <span class="kw">c</span> (<span class="dv">1000</span>, <span class="dv">5000</span>, <span class="dv">10000</span>, <span class="dv">15000</span>)) <span class="op">+</span></span>
-<span id="cb615-7"><a href="ggplot2.html#cb615-7"></a><span class="st">  </span><span class="kw">scale_color_discrete</span> (<span class="dt">name =</span> <span class="st">&quot;color quality&quot;</span>, <span class="dt">labels =</span> <span class="dv">1</span><span class="op">:</span><span class="st"> </span><span class="dv">7</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb611"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb611-1"><a href="ggplot2.html#cb611-1"></a><span class="co"># change the y axis to a logarithmic one</span></span>
+<span id="cb611-2"><a href="ggplot2.html#cb611-2"></a><span class="kw">ggplot</span>(diamondsSample, <span class="kw">aes</span> (x <span class="op">*</span><span class="st"> </span>y <span class="op">*</span><span class="st"> </span>z, price, <span class="dt">color =</span> color)) <span class="op">+</span></span>
+<span id="cb611-3"><a href="ggplot2.html#cb611-3"></a><span class="st">  </span><span class="kw">geom_point</span> (<span class="dt">na.rm =</span> T, <span class="dt">alpha =</span> <span class="fl">0.6</span>) <span class="op">+</span></span>
+<span id="cb611-4"><a href="ggplot2.html#cb611-4"></a><span class="st">  </span><span class="kw">scale_x_continuous</span> (<span class="dt">name =</span> <span class="st">&quot;volume in mm3&quot;</span>, <span class="dt">limits =</span> <span class="kw">c</span> (<span class="dv">0</span>, <span class="dv">450</span>)) <span class="op">+</span></span>
+<span id="cb611-5"><a href="ggplot2.html#cb611-5"></a><span class="st">  </span><span class="kw">scale_y_log10</span> (<span class="dt">name =</span> <span class="st">&quot;price in $&quot;</span>,</span>
+<span id="cb611-6"><a href="ggplot2.html#cb611-6"></a>                <span class="dt">breaks =</span> <span class="kw">c</span> (<span class="dv">1000</span>, <span class="dv">5000</span>, <span class="dv">10000</span>, <span class="dv">15000</span>)) <span class="op">+</span></span>
+<span id="cb611-7"><a href="ggplot2.html#cb611-7"></a><span class="st">  </span><span class="kw">scale_color_discrete</span> (<span class="dt">name =</span> <span class="st">&quot;color quality&quot;</span>, <span class="dt">labels =</span> <span class="dv">1</span><span class="op">:</span><span class="st"> </span><span class="dv">7</span>)</span></code></pre></div>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-447-1.png" width="672" /></p>
 </div>
 <hr />
@@ -888,38 +899,38 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <hr />
 <p><strong>Exercise 12.26 - color adjustment on graphs</strong></p>
-<div class="sourceCode" id="cb616"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb616-1"><a href="ggplot2.html#cb616-1"></a><span class="co"># adjust the `fill` aesthetic of the next graph by using</span></span>
-<span id="cb616-2"><a href="ggplot2.html#cb616-2"></a><span class="co"># the `scale_fill_brewer` function</span></span>
-<span id="cb616-3"><a href="ggplot2.html#cb616-3"></a><span class="co"># Set the `pallete` parameter to one of the following pallets:</span></span>
-<span id="cb616-4"><a href="ggplot2.html#cb616-4"></a><span class="co"># `Blues`, `BuPu`, `Greens`, `Grays`, `Oranges`, `OrRd`, `PuBu`,</span></span>
-<span id="cb616-5"><a href="ggplot2.html#cb616-5"></a><span class="co"># `PuRd`, `Purples`, `YlGn`, `YlOrRd`</span></span>
-<span id="cb616-6"><a href="ggplot2.html#cb616-6"></a><span class="co"># (more palletes can be found in the documentation)</span></span>
-<span id="cb616-7"><a href="ggplot2.html#cb616-7"></a><span class="kw">ggplot</span>(diamondsSample, <span class="kw">aes</span>(<span class="dt">x =</span> x <span class="op">*</span><span class="st"> </span>y <span class="op">*</span><span class="st"> </span>z, <span class="dt">fill =</span> color)) <span class="op">+</span></span>
-<span id="cb616-8"><a href="ggplot2.html#cb616-8"></a><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">30</span>, <span class="dt">na.rm =</span> T) <span class="op">+</span></span>
-<span id="cb616-9"><a href="ggplot2.html#cb616-9"></a><span class="st">  </span><span class="kw">xlim</span>(<span class="dv">0</span>, <span class="dv">500</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb612"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb612-1"><a href="ggplot2.html#cb612-1"></a><span class="co"># adjust the `fill` aesthetic of the next graph by using</span></span>
+<span id="cb612-2"><a href="ggplot2.html#cb612-2"></a><span class="co"># the `scale_fill_brewer` function</span></span>
+<span id="cb612-3"><a href="ggplot2.html#cb612-3"></a><span class="co"># Set the `pallete` parameter to one of the following pallets:</span></span>
+<span id="cb612-4"><a href="ggplot2.html#cb612-4"></a><span class="co"># `Blues`, `BuPu`, `Greens`, `Grays`, `Oranges`, `OrRd`, `PuBu`,</span></span>
+<span id="cb612-5"><a href="ggplot2.html#cb612-5"></a><span class="co"># `PuRd`, `Purples`, `YlGn`, `YlOrRd`</span></span>
+<span id="cb612-6"><a href="ggplot2.html#cb612-6"></a><span class="co"># (more palletes can be found in the documentation)</span></span>
+<span id="cb612-7"><a href="ggplot2.html#cb612-7"></a><span class="kw">ggplot</span>(diamondsSample, <span class="kw">aes</span>(<span class="dt">x =</span> x <span class="op">*</span><span class="st"> </span>y <span class="op">*</span><span class="st"> </span>z, <span class="dt">fill =</span> color)) <span class="op">+</span></span>
+<span id="cb612-8"><a href="ggplot2.html#cb612-8"></a><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">30</span>, <span class="dt">na.rm =</span> T) <span class="op">+</span></span>
+<span id="cb612-9"><a href="ggplot2.html#cb612-9"></a><span class="st">  </span><span class="kw">xlim</span>(<span class="dv">0</span>, <span class="dv">500</span>)</span></code></pre></div>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-448-1.png" width="672" /></p>
 <div class="fold s o">
-<div class="sourceCode" id="cb617"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb617-1"><a href="ggplot2.html#cb617-1"></a><span class="co"># adjust the `fill` aesthetic of the next graph by using</span></span>
-<span id="cb617-2"><a href="ggplot2.html#cb617-2"></a><span class="co"># the `scale_fill_brewer` function</span></span>
-<span id="cb617-3"><a href="ggplot2.html#cb617-3"></a><span class="co"># Set the `pallete` parameter to one of the following pallets:</span></span>
-<span id="cb617-4"><a href="ggplot2.html#cb617-4"></a><span class="co"># `Blues`, `BuPu`, `Greens`, `Grays`, `Oranges`, `OrRd`, `PuBu`,</span></span>
-<span id="cb617-5"><a href="ggplot2.html#cb617-5"></a><span class="co"># `PuRd`, `Purples`, `YlGn`, `YlOrRd`</span></span>
-<span id="cb617-6"><a href="ggplot2.html#cb617-6"></a><span class="co"># (more palletes can be found in the documentation)</span></span>
-<span id="cb617-7"><a href="ggplot2.html#cb617-7"></a><span class="kw">ggplot</span>(diamondsSample, <span class="kw">aes</span>(<span class="dt">x =</span> x <span class="op">*</span><span class="st"> </span>y <span class="op">*</span><span class="st"> </span>z, <span class="dt">fill =</span> color)) <span class="op">+</span></span>
-<span id="cb617-8"><a href="ggplot2.html#cb617-8"></a><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">30</span>, <span class="dt">na.rm =</span> T) <span class="op">+</span></span>
-<span id="cb617-9"><a href="ggplot2.html#cb617-9"></a><span class="st">  </span><span class="kw">xlim</span>(<span class="dv">0</span>, <span class="dv">500</span>) <span class="op">+</span><span class="st"> </span><span class="kw">scale_fill_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;Greens&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb613"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb613-1"><a href="ggplot2.html#cb613-1"></a><span class="co"># adjust the `fill` aesthetic of the next graph by using</span></span>
+<span id="cb613-2"><a href="ggplot2.html#cb613-2"></a><span class="co"># the `scale_fill_brewer` function</span></span>
+<span id="cb613-3"><a href="ggplot2.html#cb613-3"></a><span class="co"># Set the `pallete` parameter to one of the following pallets:</span></span>
+<span id="cb613-4"><a href="ggplot2.html#cb613-4"></a><span class="co"># `Blues`, `BuPu`, `Greens`, `Grays`, `Oranges`, `OrRd`, `PuBu`,</span></span>
+<span id="cb613-5"><a href="ggplot2.html#cb613-5"></a><span class="co"># `PuRd`, `Purples`, `YlGn`, `YlOrRd`</span></span>
+<span id="cb613-6"><a href="ggplot2.html#cb613-6"></a><span class="co"># (more palletes can be found in the documentation)</span></span>
+<span id="cb613-7"><a href="ggplot2.html#cb613-7"></a><span class="kw">ggplot</span>(diamondsSample, <span class="kw">aes</span>(<span class="dt">x =</span> x <span class="op">*</span><span class="st"> </span>y <span class="op">*</span><span class="st"> </span>z, <span class="dt">fill =</span> color)) <span class="op">+</span></span>
+<span id="cb613-8"><a href="ggplot2.html#cb613-8"></a><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">30</span>, <span class="dt">na.rm =</span> T) <span class="op">+</span></span>
+<span id="cb613-9"><a href="ggplot2.html#cb613-9"></a><span class="st">  </span><span class="kw">xlim</span>(<span class="dv">0</span>, <span class="dv">500</span>) <span class="op">+</span><span class="st"> </span><span class="kw">scale_fill_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;Greens&quot;</span>)</span></code></pre></div>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-449-1.png" width="672" /></p>
 </div>
 <div class="fold s o">
-<div class="sourceCode" id="cb618"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb618-1"><a href="ggplot2.html#cb618-1"></a><span class="co"># adjust the `fill` aesthetic of the next graph by using</span></span>
-<span id="cb618-2"><a href="ggplot2.html#cb618-2"></a><span class="co"># the `scale_fill_brewer` function</span></span>
-<span id="cb618-3"><a href="ggplot2.html#cb618-3"></a><span class="co"># Set the `pallete` parameter to one of the following pallets:</span></span>
-<span id="cb618-4"><a href="ggplot2.html#cb618-4"></a><span class="co"># `Blues`, `BuPu`, `Greens`, `Grays`, `Oranges`, `OrRd`, `PuBu`,</span></span>
-<span id="cb618-5"><a href="ggplot2.html#cb618-5"></a><span class="co"># `PuRd`, `Purples`, `YlGn`, Y`lOrRd`</span></span>
-<span id="cb618-6"><a href="ggplot2.html#cb618-6"></a><span class="co"># (more palletes can be found in the documentation)</span></span>
-<span id="cb618-7"><a href="ggplot2.html#cb618-7"></a><span class="kw">ggplot</span>(diamondsSample, <span class="kw">aes</span>(<span class="dt">x =</span> x <span class="op">*</span><span class="st"> </span>y <span class="op">*</span><span class="st"> </span>z, <span class="dt">fill =</span> color)) <span class="op">+</span></span>
-<span id="cb618-8"><a href="ggplot2.html#cb618-8"></a><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">30</span>, <span class="dt">na.rm =</span> T) <span class="op">+</span></span>
-<span id="cb618-9"><a href="ggplot2.html#cb618-9"></a><span class="st">  </span><span class="kw">xlim</span>(<span class="dv">0</span>, <span class="dv">500</span>) <span class="op">+</span><span class="st"> </span><span class="kw">scale_fill_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;YlOrRd&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb614"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb614-1"><a href="ggplot2.html#cb614-1"></a><span class="co"># adjust the `fill` aesthetic of the next graph by using</span></span>
+<span id="cb614-2"><a href="ggplot2.html#cb614-2"></a><span class="co"># the `scale_fill_brewer` function</span></span>
+<span id="cb614-3"><a href="ggplot2.html#cb614-3"></a><span class="co"># Set the `pallete` parameter to one of the following pallets:</span></span>
+<span id="cb614-4"><a href="ggplot2.html#cb614-4"></a><span class="co"># `Blues`, `BuPu`, `Greens`, `Grays`, `Oranges`, `OrRd`, `PuBu`,</span></span>
+<span id="cb614-5"><a href="ggplot2.html#cb614-5"></a><span class="co"># `PuRd`, `Purples`, `YlGn`, Y`lOrRd`</span></span>
+<span id="cb614-6"><a href="ggplot2.html#cb614-6"></a><span class="co"># (more palletes can be found in the documentation)</span></span>
+<span id="cb614-7"><a href="ggplot2.html#cb614-7"></a><span class="kw">ggplot</span>(diamondsSample, <span class="kw">aes</span>(<span class="dt">x =</span> x <span class="op">*</span><span class="st"> </span>y <span class="op">*</span><span class="st"> </span>z, <span class="dt">fill =</span> color)) <span class="op">+</span></span>
+<span id="cb614-8"><a href="ggplot2.html#cb614-8"></a><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">30</span>, <span class="dt">na.rm =</span> T) <span class="op">+</span></span>
+<span id="cb614-9"><a href="ggplot2.html#cb614-9"></a><span class="st">  </span><span class="kw">xlim</span>(<span class="dv">0</span>, <span class="dv">500</span>) <span class="op">+</span><span class="st"> </span><span class="kw">scale_fill_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;YlOrRd&quot;</span>)</span></code></pre></div>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-450-1.png" width="672" /></p>
 </div>
 <hr />
@@ -932,22 +943,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Unfortunately, there are currently no maps of the Republic of Croatia yet, but more ambitious readers can try to create one (and share with the local R community) by following the instructions at <a href = "https://github.com/trulia/choroplethr/wiki/Mapmaking-for-R-Programmers ">this</a> and <a href = "https://cran.r-project.org/web/packages/choroplethr/vignettes/h-creating-your-own-maps.html">this</a> links.</p>
 <hr />
 <p><strong>Exercise 12.27 - inverted and polar coordinate systems</strong></p>
-<div class="sourceCode" id="cb619"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb619-1"><a href="ggplot2.html#cb619-1"></a><span class="co"># change the coordinate system to &quot;inverted&quot; and then to &quot;polar&quot; for the following graph</span></span>
-<span id="cb619-2"><a href="ggplot2.html#cb619-2"></a><span class="kw">ggplot</span>(diamondsSample, <span class="kw">aes</span>(<span class="dt">x =</span> x <span class="op">*</span><span class="st"> </span>y <span class="op">*</span><span class="st"> </span>z, <span class="dt">fill =</span> color)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">30</span>, <span class="dt">na.rm =</span> T) <span class="op">+</span></span>
-<span id="cb619-3"><a href="ggplot2.html#cb619-3"></a><span class="st">  </span><span class="kw">xlim</span>(<span class="dv">40</span>, <span class="dv">100</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb615"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb615-1"><a href="ggplot2.html#cb615-1"></a><span class="co"># change the coordinate system to &quot;inverted&quot; and then to &quot;polar&quot; for the following graph</span></span>
+<span id="cb615-2"><a href="ggplot2.html#cb615-2"></a><span class="kw">ggplot</span>(diamondsSample, <span class="kw">aes</span>(<span class="dt">x =</span> x <span class="op">*</span><span class="st"> </span>y <span class="op">*</span><span class="st"> </span>z, <span class="dt">fill =</span> color)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">30</span>, <span class="dt">na.rm =</span> T) <span class="op">+</span></span>
+<span id="cb615-3"><a href="ggplot2.html#cb615-3"></a><span class="st">  </span><span class="kw">xlim</span>(<span class="dv">40</span>, <span class="dv">100</span>)</span></code></pre></div>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-451-1.png" width="672" /></p>
 <div class="fold s o">
-<div class="sourceCode" id="cb620"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb620-1"><a href="ggplot2.html#cb620-1"></a><span class="co"># change the coordinate system to &quot;inverted&quot; and then to &quot;polar&quot; for the following graph</span></span>
-<span id="cb620-2"><a href="ggplot2.html#cb620-2"></a><span class="kw">ggplot</span>(diamondsSample, <span class="kw">aes</span>(<span class="dt">x =</span> x <span class="op">*</span><span class="st"> </span>y <span class="op">*</span><span class="st"> </span>z, <span class="dt">fill =</span> color)) <span class="op">+</span></span>
-<span id="cb620-3"><a href="ggplot2.html#cb620-3"></a><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">30</span>, <span class="dt">na.rm =</span> T) <span class="op">+</span></span>
-<span id="cb620-4"><a href="ggplot2.html#cb620-4"></a><span class="st">  </span><span class="kw">xlim</span>(<span class="dv">40</span>, <span class="dv">100</span>) <span class="op">+</span><span class="st"> </span><span class="kw">coord_polar</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb616"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb616-1"><a href="ggplot2.html#cb616-1"></a><span class="co"># change the coordinate system to &quot;inverted&quot; and then to &quot;polar&quot; for the following graph</span></span>
+<span id="cb616-2"><a href="ggplot2.html#cb616-2"></a><span class="kw">ggplot</span>(diamondsSample, <span class="kw">aes</span>(<span class="dt">x =</span> x <span class="op">*</span><span class="st"> </span>y <span class="op">*</span><span class="st"> </span>z, <span class="dt">fill =</span> color)) <span class="op">+</span></span>
+<span id="cb616-3"><a href="ggplot2.html#cb616-3"></a><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">30</span>, <span class="dt">na.rm =</span> T) <span class="op">+</span></span>
+<span id="cb616-4"><a href="ggplot2.html#cb616-4"></a><span class="st">  </span><span class="kw">xlim</span>(<span class="dv">40</span>, <span class="dv">100</span>) <span class="op">+</span><span class="st"> </span><span class="kw">coord_polar</span>()</span></code></pre></div>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-452-1.png" width="672" /></p>
 </div>
 <div class="fold s o">
-<div class="sourceCode" id="cb621"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb621-1"><a href="ggplot2.html#cb621-1"></a><span class="co"># change the coordinate system to &quot;inverted&quot; and then to &quot;polar&quot; for the following graph</span></span>
-<span id="cb621-2"><a href="ggplot2.html#cb621-2"></a><span class="kw">ggplot</span>(diamondsSample, <span class="kw">aes</span> (<span class="dt">x =</span> x <span class="op">*</span><span class="st"> </span>y <span class="op">*</span><span class="st"> </span>z, <span class="dt">fill =</span> color)) <span class="op">+</span></span>
-<span id="cb621-3"><a href="ggplot2.html#cb621-3"></a><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">30</span>, <span class="dt">na.rm =</span> T) <span class="op">+</span></span>
-<span id="cb621-4"><a href="ggplot2.html#cb621-4"></a><span class="st">  </span><span class="kw">xlim</span>(<span class="dv">40</span>, <span class="dv">100</span>) <span class="op">+</span><span class="st"> </span><span class="kw">coord_flip</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb617"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb617-1"><a href="ggplot2.html#cb617-1"></a><span class="co"># change the coordinate system to &quot;inverted&quot; and then to &quot;polar&quot; for the following graph</span></span>
+<span id="cb617-2"><a href="ggplot2.html#cb617-2"></a><span class="kw">ggplot</span>(diamondsSample, <span class="kw">aes</span> (<span class="dt">x =</span> x <span class="op">*</span><span class="st"> </span>y <span class="op">*</span><span class="st"> </span>z, <span class="dt">fill =</span> color)) <span class="op">+</span></span>
+<span id="cb617-3"><a href="ggplot2.html#cb617-3"></a><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">30</span>, <span class="dt">na.rm =</span> T) <span class="op">+</span></span>
+<span id="cb617-4"><a href="ggplot2.html#cb617-4"></a><span class="st">  </span><span class="kw">xlim</span>(<span class="dv">40</span>, <span class="dv">100</span>) <span class="op">+</span><span class="st"> </span><span class="kw">coord_flip</span>()</span></code></pre></div>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-453-1.png" width="672" /></p>
 </div>
 <hr />
@@ -962,58 +973,57 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <hr />
 <p><strong>Exercise 12.28 - the aspect of theme</strong></p>
-<div class="sourceCode" id="cb622"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb622-1"><a href="ggplot2.html#cb622-1"></a><span class="co"># change the theme of the following graph to `theme_classic`</span></span>
-<span id="cb622-2"><a href="ggplot2.html#cb622-2"></a><span class="kw">ggplot</span>(diamondsSample, <span class="kw">aes</span>(<span class="dt">x =</span> x <span class="op">*</span><span class="st"> </span>y <span class="op">*</span><span class="st"> </span>z, <span class="dt">fill =</span> color)) <span class="op">+</span></span>
-<span id="cb622-3"><a href="ggplot2.html#cb622-3"></a><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">30</span>, <span class="dt">na.rm =</span> T) <span class="op">+</span></span>
-<span id="cb622-4"><a href="ggplot2.html#cb622-4"></a><span class="st">  </span><span class="kw">xlim</span> (<span class="dv">0</span>, <span class="dv">500</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb618"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb618-1"><a href="ggplot2.html#cb618-1"></a><span class="co"># change the theme of the following graph to `theme_classic`</span></span>
+<span id="cb618-2"><a href="ggplot2.html#cb618-2"></a><span class="kw">ggplot</span>(diamondsSample, <span class="kw">aes</span>(<span class="dt">x =</span> x <span class="op">*</span><span class="st"> </span>y <span class="op">*</span><span class="st"> </span>z, <span class="dt">fill =</span> color)) <span class="op">+</span></span>
+<span id="cb618-3"><a href="ggplot2.html#cb618-3"></a><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">30</span>, <span class="dt">na.rm =</span> T) <span class="op">+</span></span>
+<span id="cb618-4"><a href="ggplot2.html#cb618-4"></a><span class="st">  </span><span class="kw">xlim</span> (<span class="dv">0</span>, <span class="dv">500</span>)</span></code></pre></div>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-454-1.png" width="672" /></p>
 <div class="fold s o">
-<div class="sourceCode" id="cb623"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb623-1"><a href="ggplot2.html#cb623-1"></a><span class="co"># change the theme of the following graph to `theme_classic`</span></span>
-<span id="cb623-2"><a href="ggplot2.html#cb623-2"></a><span class="kw">ggplot</span>(diamondsSample, <span class="kw">aes</span>(<span class="dt">x =</span> x <span class="op">*</span><span class="st"> </span>y <span class="op">*</span><span class="st"> </span>z, <span class="dt">fill =</span> color)) <span class="op">+</span></span>
-<span id="cb623-3"><a href="ggplot2.html#cb623-3"></a><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">30</span>, <span class="dt">na.rm =</span> T) <span class="op">+</span></span>
-<span id="cb623-4"><a href="ggplot2.html#cb623-4"></a><span class="st">  </span><span class="kw">xlim</span>(<span class="dv">0</span>, <span class="dv">500</span>) <span class="op">+</span><span class="st"> </span><span class="kw">theme_classic</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb619"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb619-1"><a href="ggplot2.html#cb619-1"></a><span class="co"># change the theme of the following graph to `theme_classic`</span></span>
+<span id="cb619-2"><a href="ggplot2.html#cb619-2"></a><span class="kw">ggplot</span>(diamondsSample, <span class="kw">aes</span>(<span class="dt">x =</span> x <span class="op">*</span><span class="st"> </span>y <span class="op">*</span><span class="st"> </span>z, <span class="dt">fill =</span> color)) <span class="op">+</span></span>
+<span id="cb619-3"><a href="ggplot2.html#cb619-3"></a><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">30</span>, <span class="dt">na.rm =</span> T) <span class="op">+</span></span>
+<span id="cb619-4"><a href="ggplot2.html#cb619-4"></a><span class="st">  </span><span class="kw">xlim</span>(<span class="dv">0</span>, <span class="dv">500</span>) <span class="op">+</span><span class="st"> </span><span class="kw">theme_classic</span>()</span></code></pre></div>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-455-1.png" width="672" /></p>
 </div>
 <p>Often we want to change only some of the theme-related aspects (i.e. size or orientation of letters, appearance of ticks on axes, etc.). For these things we use the <code>theme</code> function, which contains a very rich set of parameters easily found by checking out the documentation. Some of these parameters are objects called “theme elements” (e.g. <code>element_line</code>,<code>element_text</code>) that we set by calling the associated function within the <code>theme</code> function call, for example:</p>
-<div class="sourceCode" id="cb624"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb624-1"><a href="ggplot2.html#cb624-1"></a><span class="co"># changing the visual appearance of the graph title</span></span>
-<span id="cb624-2"><a href="ggplot2.html#cb624-2"></a><span class="co"># (recommended for font family to use</span></span>
-<span id="cb624-3"><a href="ggplot2.html#cb624-3"></a><span class="co"># `serif`,` sans` or `mono`)</span></span>
-<span id="cb624-4"><a href="ggplot2.html#cb624-4"></a>... <span class="op">+</span><span class="st"> </span><span class="kw">theme</span>(<span class="dt">title =</span> <span class="kw">element_text</span>(<span class="dt">family =</span> <span class="st">&#39;serif&#39;</span>, <span class="dt">face =</span> <span class="st">&#39;bold.italic&#39;</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb620"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb620-1"><a href="ggplot2.html#cb620-1"></a><span class="co"># changing the visual appearance of the graph title</span></span>
+<span id="cb620-2"><a href="ggplot2.html#cb620-2"></a><span class="co"># (recommended for font family to use</span></span>
+<span id="cb620-3"><a href="ggplot2.html#cb620-3"></a><span class="co"># `serif`,` sans` or `mono`)</span></span>
+<span id="cb620-4"><a href="ggplot2.html#cb620-4"></a>... <span class="op">+</span><span class="st"> </span><span class="kw">theme</span>(<span class="dt">title =</span> <span class="kw">element_text</span>(<span class="dt">family =</span> <span class="st">&#39;serif&#39;</span>, <span class="dt">face =</span> <span class="st">&#39;bold.italic&#39;</span>))</span></code></pre></div>
 <hr />
 <p><strong>Exercise 12.29 - modifying theme elements</strong></p>
-<div class="sourceCode" id="cb625"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb625-1"><a href="ggplot2.html#cb625-1"></a><span class="co"># change the orientation of the letter on the x axis</span></span>
-<span id="cb625-2"><a href="ggplot2.html#cb625-2"></a><span class="co"># so that they are at an angle of 45 degrees</span></span>
-<span id="cb625-3"><a href="ggplot2.html#cb625-3"></a><span class="co"># search for help in the official documentation if needed</span></span>
-<span id="cb625-4"><a href="ggplot2.html#cb625-4"></a><span class="kw">ggplot</span>(diamondsSample, <span class="kw">aes</span>(cut)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_bar</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb621"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb621-1"><a href="ggplot2.html#cb621-1"></a><span class="co"># change the orientation of the letter on the x axis</span></span>
+<span id="cb621-2"><a href="ggplot2.html#cb621-2"></a><span class="co"># so that they are at an angle of 45 degrees</span></span>
+<span id="cb621-3"><a href="ggplot2.html#cb621-3"></a><span class="co"># search for help in the official documentation if needed</span></span>
+<span id="cb621-4"><a href="ggplot2.html#cb621-4"></a><span class="kw">ggplot</span>(diamondsSample, <span class="kw">aes</span>(cut)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_bar</span>()</span></code></pre></div>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-457-1.png" width="672" /></p>
 <div class="fold s o">
-<div class="sourceCode" id="cb626"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb626-1"><a href="ggplot2.html#cb626-1"></a><span class="kw">ggplot</span>(diamondsSample, <span class="kw">aes</span>(cut)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_bar</span>() <span class="op">+</span></span>
-<span id="cb626-2"><a href="ggplot2.html#cb626-2"></a><span class="st">  </span><span class="kw">theme</span> (<span class="dt">axis.text.x =</span> <span class="kw">element_text</span>(<span class="dt">angle =</span> <span class="dv">45</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb622"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb622-1"><a href="ggplot2.html#cb622-1"></a><span class="kw">ggplot</span>(diamondsSample, <span class="kw">aes</span>(cut)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_bar</span>() <span class="op">+</span></span>
+<span id="cb622-2"><a href="ggplot2.html#cb622-2"></a><span class="st">  </span><span class="kw">theme</span> (<span class="dt">axis.text.x =</span> <span class="kw">element_text</span>(<span class="dt">angle =</span> <span class="dv">45</span>))</span></code></pre></div>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-458-1.png" width="672" /></p>
 </div>
 <hr />
-</div>
 <div id="conditional-faceted-graphs" class="section level3">
-<h3><span class="header-section-number">12.3.7</span> Conditional (faceted) graphs</h3>
+<h3><span class="header-section-number">12.4.1</span> Conditional (faceted) graphs</h3>
 <p>We have previously mentioned the <code>group</code> aesthetic which, prior to visualization within a dataset, groups data into subsets defined by the selected grouping variable and then visualizes them accordingly. We have also learned that we can do implicit groupings using aesthetics of color, shape, size, etc.</p>
 <p>What is common to these principles is that visual separation, depending on a variable, is performed inside the same graph. In other words, we can use different aesthetics to represent several different visualizations within a single graph.</p>
 <p>Conditional (faceted) graphs work on the same principle, but separation by a selected variable (or variables) is done by visualizing multiple graphs which are then displayed side by side. The resultant graphs present the same information as the aesthetics of the (implicit or explicit) group, but in a way which makes it somewhat easier to study and compare each subgraph separately.</p>
 <p>Before demonstrating how to create conditional graphs, we need to perfom a brief detour and explain the term called <em>“statistical formula notation”</em>. This notation is often used in R, especially when training various statistical models, and is actually a way to concisely write a particular, formula-based relationship between variables of the dataset, and then incorporate it into the program code.</p>
 <p>The formulas will be discussed in more detail later, and for now we will restrict ourselves to a handful of very simple examples. If we want to write a simple formula of “y depending on x,” then the final formula looks like this:</p>
-<div class="sourceCode" id="cb627"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb627-1"><a href="ggplot2.html#cb627-1"></a>y <span class="op">~</span><span class="st"> </span>x <span class="co"># means &quot;y depending on x&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb623"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb623-1"><a href="ggplot2.html#cb623-1"></a>y <span class="op">~</span><span class="st"> </span>x <span class="co"># means &quot;y depending on x&quot;</span></span></code></pre></div>
 <p>we can also read this as “y as a function of x” or - in the case of linear models - a more concise notation of <code>y = ax + b</code>. Hence, we read the tilde sign (<code>~</code>) as “depending on”.</p>
 <p>Here are some more simple formulas:</p>
-<div class="sourceCode" id="cb628"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb628-1"><a href="ggplot2.html#cb628-1"></a><span class="co"># z depending on x and y (`+` means &quot;and&quot;, not arithmetic sum!)</span></span>
-<span id="cb628-2"><a href="ggplot2.html#cb628-2"></a>z <span class="op">~</span><span class="st"> </span>x <span class="op">+</span><span class="st"> </span>y</span>
-<span id="cb628-3"><a href="ggplot2.html#cb628-3"></a></span>
-<span id="cb628-4"><a href="ggplot2.html#cb628-4"></a><span class="co"># y depending on &quot;all other variables&quot;</span></span>
-<span id="cb628-5"><a href="ggplot2.html#cb628-5"></a>y <span class="op">~</span><span class="st"> </span>.</span>
-<span id="cb628-6"><a href="ggplot2.html#cb628-6"></a></span>
-<span id="cb628-7"><a href="ggplot2.html#cb628-7"></a><span class="co"># &quot;all other variables&quot; depending on y</span></span>
-<span id="cb628-8"><a href="ggplot2.html#cb628-8"></a>. <span class="op">~</span><span class="st"> </span>y</span>
-<span id="cb628-9"><a href="ggplot2.html#cb628-9"></a></span>
-<span id="cb628-10"><a href="ggplot2.html#cb628-10"></a><span class="co"># so-called &quot;one-sided&quot; formula, shorthand for &quot;depending on y&quot;</span></span>
-<span id="cb628-11"><a href="ggplot2.html#cb628-11"></a><span class="op">~</span><span class="st"> </span>y</span></code></pre></div>
+<div class="sourceCode" id="cb624"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb624-1"><a href="ggplot2.html#cb624-1"></a><span class="co"># z depending on x and y (`+` means &quot;and&quot;, not arithmetic sum!)</span></span>
+<span id="cb624-2"><a href="ggplot2.html#cb624-2"></a>z <span class="op">~</span><span class="st"> </span>x <span class="op">+</span><span class="st"> </span>y</span>
+<span id="cb624-3"><a href="ggplot2.html#cb624-3"></a></span>
+<span id="cb624-4"><a href="ggplot2.html#cb624-4"></a><span class="co"># y depending on &quot;all other variables&quot;</span></span>
+<span id="cb624-5"><a href="ggplot2.html#cb624-5"></a>y <span class="op">~</span><span class="st"> </span>.</span>
+<span id="cb624-6"><a href="ggplot2.html#cb624-6"></a></span>
+<span id="cb624-7"><a href="ggplot2.html#cb624-7"></a><span class="co"># &quot;all other variables&quot; depending on y</span></span>
+<span id="cb624-8"><a href="ggplot2.html#cb624-8"></a>. <span class="op">~</span><span class="st"> </span>y</span>
+<span id="cb624-9"><a href="ggplot2.html#cb624-9"></a></span>
+<span id="cb624-10"><a href="ggplot2.html#cb624-10"></a><span class="co"># so-called &quot;one-sided&quot; formula, shorthand for &quot;depending on y&quot;</span></span>
+<span id="cb624-11"><a href="ggplot2.html#cb624-11"></a><span class="op">~</span><span class="st"> </span>y</span></code></pre></div>
 <p>The last two examples are a little harder to define mathematically, but are often used in function calls for different purposes, mostly because of their simple notation and easy interpretation.</p>
 <p>Let us now return to the conditional graphs. There are two basic ways to create conditional graphs, by using the functions:</p>
 <ul>
@@ -1023,38 +1033,38 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>We commonly use the <code>facet_grid</code> function when we do subsets according to one or two categorical variables. Splitting two variables naturally does a “matrix” while splitting them one by one will make either a row or column, the choice we control by choosing a specific formula. On the other hand, we use the <code>facet_wrap</code> function when we want to create subgraphs only according to a single variable, but (due to a potentially larger number of categories) we want the subgraphs to span multimple rows (similar to how “word wrap” breaks sentences in text editors).</p>
 <hr />
 <p><strong>Exercise 12.30 - <code>facet_grid</code> function</strong></p>
-<div class="sourceCode" id="cb629"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb629-1"><a href="ggplot2.html#cb629-1"></a><span class="co"># let&#39;s reduce the number of levels first to make the visualization simpler</span></span>
-<span id="cb629-2"><a href="ggplot2.html#cb629-2"></a></span>
-<span id="cb629-3"><a href="ggplot2.html#cb629-3"></a>diamondsSample <span class="op">%&gt;%</span></span>
-<span id="cb629-4"><a href="ggplot2.html#cb629-4"></a><span class="st">  </span><span class="kw">filter</span>(color <span class="op">%in%</span><span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;G&quot;</span>, <span class="st">&quot;H&quot;</span>, <span class="st">&quot;I&quot;</span>, <span class="st">&quot;J&quot;</span>),</span>
-<span id="cb629-5"><a href="ggplot2.html#cb629-5"></a>         cut <span class="op">%in%</span><span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;Very Good&quot;</span>,</span>
-<span id="cb629-6"><a href="ggplot2.html#cb629-6"></a>                    <span class="st">&quot;Premium&quot;</span>, <span class="st">&quot;Ideal&quot;</span>)) -&gt;<span class="st"> </span>diamondsSample2</span>
-<span id="cb629-7"><a href="ggplot2.html#cb629-7"></a></span>
-<span id="cb629-8"><a href="ggplot2.html#cb629-8"></a><span class="co"># turn the following graph into a conditional graph</span></span>
-<span id="cb629-9"><a href="ggplot2.html#cb629-9"></a><span class="co"># splitting graphs by all combinations of</span></span>
-<span id="cb629-10"><a href="ggplot2.html#cb629-10"></a><span class="co"># colors (`color`) and cuts (`cut`)</span></span>
-<span id="cb629-11"><a href="ggplot2.html#cb629-11"></a><span class="co"># use the `facet_grid` function and</span></span>
-<span id="cb629-12"><a href="ggplot2.html#cb629-12"></a><span class="co"># an appropriate statistical formula as its parameter</span></span>
-<span id="cb629-13"><a href="ggplot2.html#cb629-13"></a></span>
-<span id="cb629-14"><a href="ggplot2.html#cb629-14"></a><span class="kw">ggplot</span>(diamondsSample2, <span class="kw">aes</span>(depth, <span class="dt">fill =</span> clarity)) <span class="op">+</span></span>
-<span id="cb629-15"><a href="ggplot2.html#cb629-15"></a><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">5</span>, <span class="dt">position =</span> <span class="st">&#39;dodge&#39;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb625"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb625-1"><a href="ggplot2.html#cb625-1"></a><span class="co"># let&#39;s reduce the number of levels first to make the visualization simpler</span></span>
+<span id="cb625-2"><a href="ggplot2.html#cb625-2"></a></span>
+<span id="cb625-3"><a href="ggplot2.html#cb625-3"></a>diamondsSample <span class="op">%&gt;%</span></span>
+<span id="cb625-4"><a href="ggplot2.html#cb625-4"></a><span class="st">  </span><span class="kw">filter</span>(color <span class="op">%in%</span><span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;G&quot;</span>, <span class="st">&quot;H&quot;</span>, <span class="st">&quot;I&quot;</span>, <span class="st">&quot;J&quot;</span>),</span>
+<span id="cb625-5"><a href="ggplot2.html#cb625-5"></a>         cut <span class="op">%in%</span><span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;Very Good&quot;</span>,</span>
+<span id="cb625-6"><a href="ggplot2.html#cb625-6"></a>                    <span class="st">&quot;Premium&quot;</span>, <span class="st">&quot;Ideal&quot;</span>)) -&gt;<span class="st"> </span>diamondsSample2</span>
+<span id="cb625-7"><a href="ggplot2.html#cb625-7"></a></span>
+<span id="cb625-8"><a href="ggplot2.html#cb625-8"></a><span class="co"># turn the following graph into a conditional graph</span></span>
+<span id="cb625-9"><a href="ggplot2.html#cb625-9"></a><span class="co"># splitting graphs by all combinations of</span></span>
+<span id="cb625-10"><a href="ggplot2.html#cb625-10"></a><span class="co"># colors (`color`) and cuts (`cut`)</span></span>
+<span id="cb625-11"><a href="ggplot2.html#cb625-11"></a><span class="co"># use the `facet_grid` function and</span></span>
+<span id="cb625-12"><a href="ggplot2.html#cb625-12"></a><span class="co"># an appropriate statistical formula as its parameter</span></span>
+<span id="cb625-13"><a href="ggplot2.html#cb625-13"></a></span>
+<span id="cb625-14"><a href="ggplot2.html#cb625-14"></a><span class="kw">ggplot</span>(diamondsSample2, <span class="kw">aes</span>(depth, <span class="dt">fill =</span> clarity)) <span class="op">+</span></span>
+<span id="cb625-15"><a href="ggplot2.html#cb625-15"></a><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">5</span>, <span class="dt">position =</span> <span class="st">&#39;dodge&#39;</span>)</span></code></pre></div>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-461-1.png" width="672" /></p>
 <div class="fold s o">
-<div class="sourceCode" id="cb630"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb630-1"><a href="ggplot2.html#cb630-1"></a><span class="kw">ggplot</span>(diamondsSample2, <span class="kw">aes</span>(depth, <span class="dt">fill =</span> clarity)) <span class="op">+</span></span>
-<span id="cb630-2"><a href="ggplot2.html#cb630-2"></a><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">5</span>, <span class="dt">position =</span> <span class="st">&#39;dodge&#39;</span>) <span class="op">+</span></span>
-<span id="cb630-3"><a href="ggplot2.html#cb630-3"></a><span class="st">  </span><span class="kw">facet_grid</span>(color <span class="op">~</span><span class="st"> </span>cut)</span></code></pre></div>
+<div class="sourceCode" id="cb626"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb626-1"><a href="ggplot2.html#cb626-1"></a><span class="kw">ggplot</span>(diamondsSample2, <span class="kw">aes</span>(depth, <span class="dt">fill =</span> clarity)) <span class="op">+</span></span>
+<span id="cb626-2"><a href="ggplot2.html#cb626-2"></a><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">5</span>, <span class="dt">position =</span> <span class="st">&#39;dodge&#39;</span>) <span class="op">+</span></span>
+<span id="cb626-3"><a href="ggplot2.html#cb626-3"></a><span class="st">  </span><span class="kw">facet_grid</span>(color <span class="op">~</span><span class="st"> </span>cut)</span></code></pre></div>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-462-1.png" width="672" /></p>
 </div>
 <hr />
 <p><strong>Exercise 12.31 - <code>facet_grid</code> function (2)</strong></p>
-<div class="sourceCode" id="cb631"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb631-1"><a href="ggplot2.html#cb631-1"></a><span class="co"># repeat the same as above, but now group only by color</span></span>
-<span id="cb631-2"><a href="ggplot2.html#cb631-2"></a><span class="co"># arrange subgraphs into a column</span></span>
-<span id="cb631-3"><a href="ggplot2.html#cb631-3"></a><span class="co"># use the `facet_grid` function and formula notation with a dot</span></span>
-<span id="cb631-4"><a href="ggplot2.html#cb631-4"></a><span class="kw">ggplot</span>(diamondsSample2, <span class="kw">aes</span>(depth, <span class="dt">fill =</span> clarity)) <span class="op">+</span></span>
-<span id="cb631-5"><a href="ggplot2.html#cb631-5"></a><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">5</span>, <span class="dt">position =</span> <span class="st">&#39;dodge&#39;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb627"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb627-1"><a href="ggplot2.html#cb627-1"></a><span class="co"># repeat the same as above, but now group only by color</span></span>
+<span id="cb627-2"><a href="ggplot2.html#cb627-2"></a><span class="co"># arrange subgraphs into a column</span></span>
+<span id="cb627-3"><a href="ggplot2.html#cb627-3"></a><span class="co"># use the `facet_grid` function and formula notation with a dot</span></span>
+<span id="cb627-4"><a href="ggplot2.html#cb627-4"></a><span class="kw">ggplot</span>(diamondsSample2, <span class="kw">aes</span>(depth, <span class="dt">fill =</span> clarity)) <span class="op">+</span></span>
+<span id="cb627-5"><a href="ggplot2.html#cb627-5"></a><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">5</span>, <span class="dt">position =</span> <span class="st">&#39;dodge&#39;</span>)</span></code></pre></div>
 <div class="fold s o">
-<div class="sourceCode" id="cb632"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb632-1"><a href="ggplot2.html#cb632-1"></a><span class="kw">ggplot</span>(diamondsSample2, <span class="kw">aes</span>(depth, <span class="dt">fill =</span> clarity)) <span class="op">+</span></span>
-<span id="cb632-2"><a href="ggplot2.html#cb632-2"></a><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">5</span>, <span class="dt">position =</span> <span class="st">&#39;dodge&#39;</span>) <span class="op">+</span><span class="st"> </span><span class="kw">facet_grid</span>(color <span class="op">~</span><span class="st"> </span>.)</span></code></pre></div>
+<div class="sourceCode" id="cb628"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb628-1"><a href="ggplot2.html#cb628-1"></a><span class="kw">ggplot</span>(diamondsSample2, <span class="kw">aes</span>(depth, <span class="dt">fill =</span> clarity)) <span class="op">+</span></span>
+<span id="cb628-2"><a href="ggplot2.html#cb628-2"></a><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">5</span>, <span class="dt">position =</span> <span class="st">&#39;dodge&#39;</span>) <span class="op">+</span><span class="st"> </span><span class="kw">facet_grid</span>(color <span class="op">~</span><span class="st"> </span>.)</span></code></pre></div>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-464-1.png" width="672" /></p>
 </div>
 <hr />
@@ -1062,50 +1072,50 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Let’s now take a look at how the <code>facet_wrap</code> function works:</p>
 <hr />
 <p><strong>Exercise 12.32 - <code>facet_wrap</code> function</strong></p>
-<div class="sourceCode" id="cb633"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb633-1"><a href="ggplot2.html#cb633-1"></a><span class="co"># break the following graph into subgraphs based on transparency (`clarity`)</span></span>
-<span id="cb633-2"><a href="ggplot2.html#cb633-2"></a><span class="co"># use the `facet_wrap` function and a one-sided formula</span></span>
-<span id="cb633-3"><a href="ggplot2.html#cb633-3"></a><span class="kw">ggplot</span>(diamondsSample2, <span class="kw">aes</span>(x <span class="op">*</span><span class="st"> </span>y <span class="op">*</span><span class="st"> </span>z, price)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb629"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb629-1"><a href="ggplot2.html#cb629-1"></a><span class="co"># break the following graph into subgraphs based on transparency (`clarity`)</span></span>
+<span id="cb629-2"><a href="ggplot2.html#cb629-2"></a><span class="co"># use the `facet_wrap` function and a one-sided formula</span></span>
+<span id="cb629-3"><a href="ggplot2.html#cb629-3"></a><span class="kw">ggplot</span>(diamondsSample2, <span class="kw">aes</span>(x <span class="op">*</span><span class="st"> </span>y <span class="op">*</span><span class="st"> </span>z, price)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>()</span></code></pre></div>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-465-1.png" width="672" /></p>
 <div class="fold s o">
-<div class="sourceCode" id="cb634"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb634-1"><a href="ggplot2.html#cb634-1"></a><span class="co"># break the following graph into subgraphs based on transparency (`clarity`)</span></span>
-<span id="cb634-2"><a href="ggplot2.html#cb634-2"></a><span class="co"># use the `facet_wrap` function and a one-sided formula</span></span>
-<span id="cb634-3"><a href="ggplot2.html#cb634-3"></a><span class="kw">ggplot</span>(diamondsSample2, <span class="kw">aes</span>(x <span class="op">*</span><span class="st"> </span>y <span class="op">*</span><span class="st"> </span>z, price)) <span class="op">+</span></span>
-<span id="cb634-4"><a href="ggplot2.html#cb634-4"></a><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span><span class="st"> </span><span class="kw">facet_wrap</span>(<span class="op">~</span>clarity)</span></code></pre></div>
+<div class="sourceCode" id="cb630"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb630-1"><a href="ggplot2.html#cb630-1"></a><span class="co"># break the following graph into subgraphs based on transparency (`clarity`)</span></span>
+<span id="cb630-2"><a href="ggplot2.html#cb630-2"></a><span class="co"># use the `facet_wrap` function and a one-sided formula</span></span>
+<span id="cb630-3"><a href="ggplot2.html#cb630-3"></a><span class="kw">ggplot</span>(diamondsSample2, <span class="kw">aes</span>(x <span class="op">*</span><span class="st"> </span>y <span class="op">*</span><span class="st"> </span>z, price)) <span class="op">+</span></span>
+<span id="cb630-4"><a href="ggplot2.html#cb630-4"></a><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span><span class="st"> </span><span class="kw">facet_wrap</span>(<span class="op">~</span>clarity)</span></code></pre></div>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-466-1.png" width="672" /></p>
 </div>
 <hr />
 </div>
 </div>
 <div id="graphs-in-exploratory-analysis-and-reporting" class="section level2">
-<h2><span class="header-section-number">12.4</span> Graphs in Exploratory Analysis and Reporting</h2>
+<h2><span class="header-section-number">12.5</span> Graphs in Exploratory Analysis and Reporting</h2>
 <p>Before we finish the chapter, we can briefly look at the difference between graphs made for exploratory data analysis and those we use in reports, to communicate our conclusions to other people, and to share our findings.</p>
 <p><strong>Exploratory data analysis</strong> often aims for <strong>efficiency and quantity</strong>. It has already been said that exploratory analysis comes down to answering a series of questions that an analyst asks regarding data. How pretty the graph looks is often irrelevant - the main thing is that graphs have enough information to be able to answer the questions being asked and offer foundations for setting up various hypotheses. The analyst will also often try and experiment with different combinations of aesthetics, geometries and statistics. Sometimes it is convenient to go beyond what <code>ggplot2</code> package offers and use additional packages that are more suitable for what the analyst wants to achieve. For example, the <code>ggpairs</code> function of the <code>GGally</code> package allows pairing of multiple variables of a data frame and creating a matrix of single and two-variable graphs:</p>
-<div class="sourceCode" id="cb635"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb635-1"><a href="ggplot2.html#cb635-1"></a><span class="co">#library (GGally) #if necessary</span></span>
-<span id="cb635-2"><a href="ggplot2.html#cb635-2"></a><span class="co"># We only take four columns for a clearer view</span></span>
-<span id="cb635-3"><a href="ggplot2.html#cb635-3"></a><span class="kw">ggpairs</span>(<span class="dt">data =</span> diamondsSample[, <span class="kw">c</span> (<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">5</span>, <span class="dv">7</span>)])</span></code></pre></div>
+<div class="sourceCode" id="cb631"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb631-1"><a href="ggplot2.html#cb631-1"></a><span class="co">#library (GGally) #if necessary</span></span>
+<span id="cb631-2"><a href="ggplot2.html#cb631-2"></a><span class="co"># We only take four columns for a clearer view</span></span>
+<span id="cb631-3"><a href="ggplot2.html#cb631-3"></a><span class="kw">ggpairs</span>(<span class="dt">data =</span> diamondsSample[, <span class="kw">c</span> (<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">5</span>, <span class="dv">7</span>)])</span></code></pre></div>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-467-1.png" width="672" /></p>
 <p>Exploratory graphs are used by the analyst to visualize the data for themselves, to look for patterns, to recognize distributions or natural groupings of data, or to spot outliers. Likewise, exploratory graphs are often used to quickly gain insight into various <strong>aggregate statistics</strong>. In the case of predictive data analysis, the analyst will often create some simpler predictive models during the exploratory analysis, which they will then visualize on the graph to be able to more accurately evalute the models’ performance, and based on the identified shortcomings, develop a strategy for further steps of the analysis.</p>
 <p>For <strong>reporting</strong>, on the other hand, the <strong>quality of the graph</strong> is crucial, in terms of presenting information clearly and transparently. The graph must be easy to readily interpret, with carefully chosen explanations and selected use of the added <strong>metadata</strong>, most commonly in the form of additional text and annotations. To create such graphs, it is recommended to use additional <code>geom_text</code> layers for text tags in the corresponding areas of the graph where they can contribute most, as well as creative use of <code>geom_point</code>, <code>geom_hline</code>,<code>geom_vline</code>, <code>geom_rect</code> and similar geometric layers that will further clarify certain segments of the graph. It is also recommended to prepare a specific graph theme object in advance, which will then be consistently applied to all graphs.</p>
 <p>In many cases, the graphs used in reporting are a subset of chosen and “beautified” graphs obtained during exploratory analysis. However, the analyst should pay particular attention to the fact that graphs in reports are often made for an audience that is far less familiar with the dataset and the various in-depth knowledge that the analyst has obtained during exploratory analysis. Reporting graphs must therefore be end-user oriented and carefully designed for this purpose. Therefore, it is recommended that all elements of the graph - including the title, legends, etc., be oriented to the communication of information and clarification of what the graph is showing, which is in line with the conclusions drawn by the publication the graph is a part of.</p>
 <p>Sometimes, due to a lack of space or simply as a presentational choice, we want to put more different graphs inside a single image. We usually do this by storing separate graphs each in its own image file and then collating those images within the interface we use to write a publication containing those graphs. However, we can also combine graphs in advance using the <code>gridExtra</code> package. Among other things, this package offers the <code>grid.arrange</code> function with the help of which graphs are placed into a matrix with the selected number of rows and columns.</p>
-<div class="sourceCode" id="cb636"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb636-1"><a href="ggplot2.html#cb636-1"></a><span class="co">#library (gridExtra) # if necessary</span></span>
-<span id="cb636-2"><a href="ggplot2.html#cb636-2"></a></span>
-<span id="cb636-3"><a href="ggplot2.html#cb636-3"></a><span class="co"># we first store graphs into separate variables</span></span>
-<span id="cb636-4"><a href="ggplot2.html#cb636-4"></a>g1 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(diamondsSample, <span class="kw">aes</span> (x <span class="op">*</span><span class="st"> </span>y <span class="op">*</span><span class="st"> </span>z, price, <span class="dt">color =</span> color)) <span class="op">+</span></span>
-<span id="cb636-5"><a href="ggplot2.html#cb636-5"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">alpha =</span> <span class="fl">0.6</span>)</span>
-<span id="cb636-6"><a href="ggplot2.html#cb636-6"></a></span>
-<span id="cb636-7"><a href="ggplot2.html#cb636-7"></a>g2 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(diamondsSample, <span class="kw">aes</span> (<span class="dt">x =</span> x <span class="op">*</span><span class="st"> </span>y <span class="op">*</span><span class="st"> </span>z, <span class="dt">fill =</span> color)) <span class="op">+</span></span>
-<span id="cb636-8"><a href="ggplot2.html#cb636-8"></a><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">30</span>, <span class="dt">na.rm =</span> T) <span class="op">+</span></span>
-<span id="cb636-9"><a href="ggplot2.html#cb636-9"></a><span class="st">  </span><span class="kw">scale_fill_brewer</span> (<span class="dt">palette =</span> <span class="st">&quot;Greens&quot;</span>)</span>
-<span id="cb636-10"><a href="ggplot2.html#cb636-10"></a></span>
-<span id="cb636-11"><a href="ggplot2.html#cb636-11"></a>g3 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(diamondsSample, <span class="kw">aes</span> (<span class="dt">x =</span> cut)) <span class="op">+</span></span>
-<span id="cb636-12"><a href="ggplot2.html#cb636-12"></a><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">fill =</span> <span class="st">&quot;blue&quot;</span>, <span class="dt">alpha =</span> <span class="fl">0.5</span>)</span>
-<span id="cb636-13"><a href="ggplot2.html#cb636-13"></a></span>
-<span id="cb636-14"><a href="ggplot2.html#cb636-14"></a>g4 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(diamondsSample, <span class="kw">aes</span> (<span class="dt">x =</span> color, <span class="dt">fill =</span> clarity)) <span class="op">+</span></span>
-<span id="cb636-15"><a href="ggplot2.html#cb636-15"></a><span class="st">  </span><span class="kw">geom_bar</span>() <span class="op">+</span><span class="st"> </span><span class="kw">coord_polar</span>()</span>
-<span id="cb636-16"><a href="ggplot2.html#cb636-16"></a></span>
-<span id="cb636-17"><a href="ggplot2.html#cb636-17"></a><span class="co"># and then we call the `grid.arrange` function</span></span>
-<span id="cb636-18"><a href="ggplot2.html#cb636-18"></a><span class="kw">grid.arrange</span>(g1, g2, g3, g4, <span class="dt">nrow =</span> <span class="dv">2</span>, <span class="dt">ncol =</span> <span class="dv">2</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb632"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb632-1"><a href="ggplot2.html#cb632-1"></a><span class="co">#library (gridExtra) # if necessary</span></span>
+<span id="cb632-2"><a href="ggplot2.html#cb632-2"></a></span>
+<span id="cb632-3"><a href="ggplot2.html#cb632-3"></a><span class="co"># we first store graphs into separate variables</span></span>
+<span id="cb632-4"><a href="ggplot2.html#cb632-4"></a>g1 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(diamondsSample, <span class="kw">aes</span> (x <span class="op">*</span><span class="st"> </span>y <span class="op">*</span><span class="st"> </span>z, price, <span class="dt">color =</span> color)) <span class="op">+</span></span>
+<span id="cb632-5"><a href="ggplot2.html#cb632-5"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">alpha =</span> <span class="fl">0.6</span>)</span>
+<span id="cb632-6"><a href="ggplot2.html#cb632-6"></a></span>
+<span id="cb632-7"><a href="ggplot2.html#cb632-7"></a>g2 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(diamondsSample, <span class="kw">aes</span> (<span class="dt">x =</span> x <span class="op">*</span><span class="st"> </span>y <span class="op">*</span><span class="st"> </span>z, <span class="dt">fill =</span> color)) <span class="op">+</span></span>
+<span id="cb632-8"><a href="ggplot2.html#cb632-8"></a><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">30</span>, <span class="dt">na.rm =</span> T) <span class="op">+</span></span>
+<span id="cb632-9"><a href="ggplot2.html#cb632-9"></a><span class="st">  </span><span class="kw">scale_fill_brewer</span> (<span class="dt">palette =</span> <span class="st">&quot;Greens&quot;</span>)</span>
+<span id="cb632-10"><a href="ggplot2.html#cb632-10"></a></span>
+<span id="cb632-11"><a href="ggplot2.html#cb632-11"></a>g3 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(diamondsSample, <span class="kw">aes</span> (<span class="dt">x =</span> cut)) <span class="op">+</span></span>
+<span id="cb632-12"><a href="ggplot2.html#cb632-12"></a><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">fill =</span> <span class="st">&quot;blue&quot;</span>, <span class="dt">alpha =</span> <span class="fl">0.5</span>)</span>
+<span id="cb632-13"><a href="ggplot2.html#cb632-13"></a></span>
+<span id="cb632-14"><a href="ggplot2.html#cb632-14"></a>g4 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(diamondsSample, <span class="kw">aes</span> (<span class="dt">x =</span> color, <span class="dt">fill =</span> clarity)) <span class="op">+</span></span>
+<span id="cb632-15"><a href="ggplot2.html#cb632-15"></a><span class="st">  </span><span class="kw">geom_bar</span>() <span class="op">+</span><span class="st"> </span><span class="kw">coord_polar</span>()</span>
+<span id="cb632-16"><a href="ggplot2.html#cb632-16"></a></span>
+<span id="cb632-17"><a href="ggplot2.html#cb632-17"></a><span class="co"># and then we call the `grid.arrange` function</span></span>
+<span id="cb632-18"><a href="ggplot2.html#cb632-18"></a><span class="kw">grid.arrange</span>(g1, g2, g3, g4, <span class="dt">nrow =</span> <span class="dv">2</span>, <span class="dt">ncol =</span> <span class="dv">2</span>)</span></code></pre></div>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-468-1.png" width="672" /></p>
 <hr />
 <p>This concludes the story of the grammar of graphics, its aspects and its application with the help of the <code>ggplot2</code> package. Not all of the features of this package are fully explained here, which is why it is strongly recommended that you read the documentation further and expand your knowledge beyond what was covered in this chapter. Also, one should not forget about a number of additional packages that further extend the capabilities of the <code>ggplot2</code> package, which we should look for depending on our requirements and desires regarding the visualizations we want to create for our data analysis projects. For inspiration, it’s convenient to look at the gallery of graphs and images created using the R language, available <a href = "http://www.r-graph-gallery.com/all-graphs/"> at this link </a>.</p>
@@ -1130,8 +1140,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>the rectangles color should use the <code>Dark2</code> palette</li>
 </ol></li>
 </ol>
-<div class="sourceCode" id="cb637"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb637-1"><a href="ggplot2.html#cb637-1"></a><span class="kw">ggplot</span>(mpg, <span class="kw">aes</span>(<span class="dt">x =</span> <span class="kw">as.factor</span>(cyl), </span>
-<span id="cb637-2"><a href="ggplot2.html#cb637-2"></a>                <span class="dt">fill =</span> <span class="kw">as.factor</span>(year))) <span class="op">+</span><span class="st"> </span><span class="kw">geom_bar</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb633"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb633-1"><a href="ggplot2.html#cb633-1"></a><span class="kw">ggplot</span>(mpg, <span class="kw">aes</span>(<span class="dt">x =</span> <span class="kw">as.factor</span>(cyl), </span>
+<span id="cb633-2"><a href="ggplot2.html#cb633-2"></a>                <span class="dt">fill =</span> <span class="kw">as.factor</span>(year))) <span class="op">+</span><span class="st"> </span><span class="kw">geom_bar</span>()</span></code></pre></div>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-469-1.png" width="672" /></p>
 <ol start="4" style="list-style-type: decimal">
 <li>Change the theme of the next graph as follows:
@@ -1140,30 +1150,26 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>turn the x axis labels vertically</li>
 </ol></li>
 </ol>
-<div class="sourceCode" id="cb638"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb638-1"><a href="ggplot2.html#cb638-1"></a><span class="kw">ggplot</span>(mpg, <span class="kw">aes</span>(<span class="dt">x =</span> <span class="kw">as.factor</span>(trans), <span class="dt">y =</span> displ)) <span class="op">+</span><span class="st"> </span></span>
-<span id="cb638-2"><a href="ggplot2.html#cb638-2"></a><span class="st">  </span><span class="kw">geom_boxplot</span>() </span></code></pre></div>
+<div class="sourceCode" id="cb634"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb634-1"><a href="ggplot2.html#cb634-1"></a><span class="kw">ggplot</span>(mpg, <span class="kw">aes</span>(<span class="dt">x =</span> <span class="kw">as.factor</span>(trans), <span class="dt">y =</span> displ)) <span class="op">+</span><span class="st"> </span></span>
+<span id="cb634-2"><a href="ggplot2.html#cb634-2"></a><span class="st">  </span><span class="kw">geom_boxplot</span>() </span></code></pre></div>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-470-1.png" width="672" /></p>
 <ol start="5" style="list-style-type: decimal">
 <li>The following graph shows the highway miles per gallon consumption histogram, with the color of the rectangle reflecting the number of cylinders. Try to improve the graphs’ interpretability by replacing the aesthetics of color and using multiple graphs that are conditioned by the number of cylinders. Organize the graphs in a 2 x 2 matrix.</li>
 </ol>
-<div class="sourceCode" id="cb639"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb639-1"><a href="ggplot2.html#cb639-1"></a><span class="kw">ggplot</span>(mpg, <span class="kw">aes</span>(hwy, <span class="dt">fill =</span> <span class="kw">as.factor</span>(cyl))) <span class="op">+</span><span class="st"> </span></span>
-<span id="cb639-2"><a href="ggplot2.html#cb639-2"></a><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">10</span>, <span class="dt">position =</span> <span class="st">&quot;dodge&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb635"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb635-1"><a href="ggplot2.html#cb635-1"></a><span class="kw">ggplot</span>(mpg, <span class="kw">aes</span>(hwy, <span class="dt">fill =</span> <span class="kw">as.factor</span>(cyl))) <span class="op">+</span><span class="st"> </span></span>
+<span id="cb635-2"><a href="ggplot2.html#cb635-2"></a><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">10</span>, <span class="dt">position =</span> <span class="st">&quot;dodge&quot;</span>)</span></code></pre></div>
 <p><img src="osnoveR_files/figure-html/unnamed-chunk-471-1.png" width="672" /></p>
 <ol start="6" style="list-style-type: decimal">
 <li>Assume you have the following data frame:</li>
 </ol>
-<div class="sourceCode" id="cb640"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb640-1"><a href="ggplot2.html#cb640-1"></a>sales &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">month =</span> <span class="dv">1</span><span class="op">:</span><span class="dv">12</span>,</span>
-<span id="cb640-2"><a href="ggplot2.html#cb640-2"></a>          <span class="dt">total =</span> <span class="kw">c</span>(<span class="dv">10000</span>, <span class="dv">5000</span>, <span class="dv">12000</span>, <span class="dv">3000</span>, <span class="dv">5000</span>, <span class="dv">7000</span>, </span>
-<span id="cb640-3"><a href="ggplot2.html#cb640-3"></a>                   <span class="dv">10000</span>, <span class="dv">2000</span>, <span class="dv">4000</span>, <span class="dv">8000</span>, <span class="dv">11000</span>, <span class="dv">14000</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb636"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb636-1"><a href="ggplot2.html#cb636-1"></a>sales &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">month =</span> <span class="dv">1</span><span class="op">:</span><span class="dv">12</span>,</span>
+<span id="cb636-2"><a href="ggplot2.html#cb636-2"></a>          <span class="dt">total =</span> <span class="kw">c</span>(<span class="dv">10000</span>, <span class="dv">5000</span>, <span class="dv">12000</span>, <span class="dv">3000</span>, <span class="dv">5000</span>, <span class="dv">7000</span>, </span>
+<span id="cb636-3"><a href="ggplot2.html#cb636-3"></a>                   <span class="dv">10000</span>, <span class="dv">2000</span>, <span class="dv">4000</span>, <span class="dv">8000</span>, <span class="dv">11000</span>, <span class="dv">14000</span>))</span></code></pre></div>
 <p>and you visualize it with a bar graph. However, the <code>geom_bar</code> function by default uses only one variable and automatically calculates the <code>count</code> statistics. How to solve this problem? Suggest a solution and create the appropriate bar graph.</p>
 <hr />
 <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Programirajmo u R-u</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://www.fer.unizg.hr/en/damir.pintar" property="cc:attributionName" rel="cc:attributionURL">Damir Pintar</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://ratnip.github.io/FER_OPJR/" rel="dct:source">https://ratnip.github.io/FER_OPJR/</a></p>
 
-<div id="refs" class="references">
-<div>
-<p>Bache, Stefan Milton, and Hadley Wickham. 2014. <em>Magrittr: A Forward-Pipe Operator for R</em>. <a href="https://CRAN.R-project.org/package=magrittr">https://CRAN.R-project.org/package=magrittr</a>.</p>
-</div>
-</div>
+<p>#(PART) Machine Learning and Predictive Analytics {-}</p>
 </div>
 </div>
             </section>
@@ -1171,8 +1177,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="dplyr.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="dplyr.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="regression.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
