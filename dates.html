@@ -24,7 +24,7 @@
 <meta name="author" content="Damir Pintar" />
 
 
-<meta name="date" content="2021-01-19" />
+<meta name="date" content="2021-02-01" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -345,6 +345,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="13.3" data-path="regression.html"><a href="regression.html#multiple-linear-regression"><i class="fa fa-check"></i><b>13.3</b> Multiple linear regression</a></li>
 <li class="chapter" data-level="" data-path="tipovi.html"><a href="tipovi.html#homework-exercises"><i class="fa fa-check"></i>Homework exercises</a></li>
 </ul></li>
+<li class="chapter" data-level="14" data-path="predictive-Modeling.html"><a href="predictive-Modeling.html"><i class="fa fa-check"></i><b>14</b> Introduction to Predictive Modeling</a><ul>
+<li class="chapter" data-level="14.1" data-path="predictive-Modeling.html"><a href="predictive-Modeling.html#what-is-predictive-modeling"><i class="fa fa-check"></i><b>14.1</b> What is predictive modeling?</a></li>
+<li class="chapter" data-level="14.2" data-path="predictive-Modeling.html"><a href="predictive-Modeling.html#creating-training-and-test-datasets"><i class="fa fa-check"></i><b>14.2</b> Creating training and test datasets</a></li>
+<li class="chapter" data-level="14.3" data-path="predictive-Modeling.html"><a href="predictive-Modeling.html#classification-predictive-models---knn-classification"><i class="fa fa-check"></i><b>14.3</b> Classification Predictive Models - kNN Classification</a></li>
+<li class="chapter" data-level="14.4" data-path="predictive-Modeling.html"><a href="predictive-Modeling.html#package-caret-and-predictive-modeling"><i class="fa fa-check"></i><b>14.4</b> Package <code>caret</code> and predictive modeling</a></li>
+</ul></li>
 </ul>
 
       </nav>
@@ -405,7 +411,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb383-7"><a href="dates.html#cb383-7"></a><span class="kw">as.Date</span>(<span class="st">&#39;2016-31-05&#39;</span>, <span class="dt">format =</span> <span class="st">&#39;%Y-%d-%m&#39;</span>)</span>
 <span id="cb383-8"><a href="dates.html#cb383-8"></a><span class="kw">as.Date</span>(<span class="st">&#39;17.10.2015&#39;</span>, <span class="dt">format =</span> <span class="st">&#39;%d.%m.%Y&#39;</span>)</span>
 <span id="cb383-9"><a href="dates.html#cb383-9"></a><span class="kw">as.Date</span>(<span class="st">&#39;01#01#2001&#39;</span>, <span class="dt">format =</span> <span class="st">&#39;%d#%m#%Y&#39;</span>)</span></code></pre></div>
-<pre><code>## [1] &quot;2021-01-19&quot;
+<pre><code>## [1] &quot;2021-02-01&quot;
 ## [1] &quot;0027-12-19&quot;
 ## [1] &quot;2016-05-31&quot;
 ## [1] &quot;2015-10-17&quot;
@@ -430,10 +436,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb386-7"><a href="dates.html#cb386-7"></a></span>
 <span id="cb386-8"><a href="dates.html#cb386-8"></a><span class="co"># print out how many days have passed since 1.1.2000. until today</span></span>
 <span id="cb386-9"><a href="dates.html#cb386-9"></a><span class="kw">Sys.Date</span>() <span class="op">-</span><span class="st"> </span><span class="kw">as.Date</span>(<span class="st">&#39;2000-01-01&#39;</span>)</span></code></pre></div>
-<pre><code>## [1] &quot;2018-04-25&quot;
+<pre><code>## [1] &quot;2018-05-08&quot;
 ## [1] &quot;2015-03-01&quot;
 ## [1] &quot;2016-02-29&quot;
-## Time difference of 7689 days</code></pre>
+## Time difference of 7702 days</code></pre>
 </div>
 <hr />
 <p>The last expression will actually result in an object of class <code>difftime</code> which is an object representation of a time interval. Printing this object uses so-called “automatic” unit selection (specifically, the <code>units</code> parameter is by default set to <code>auto</code>) that will attempt to select the most appropriate time unit for printing. If we want to explicitly choose which time unit we want (seconds, minutes, hours, days or weeks), then it’s easier to forgo using the <code>-</code> operator and leverage the <code>difftime()</code> function directly. Specific time unit can then be chosen by setting the <code>units</code> parameter to <code>seconds</code>, <code>minutes</code> etc.</p>
@@ -455,7 +461,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb389-7"><a href="dates.html#cb389-7"></a><span class="co"># how many hours have passed between 1.3.2015. and today?</span></span>
 <span id="cb389-8"><a href="dates.html#cb389-8"></a><span class="kw">difftime</span>(<span class="kw">Sys.Date</span>(), <span class="st">&#39;2015-03-01&#39;</span>, <span class="dt">units =</span> <span class="st">&quot;hours&quot;</span>)</span></code></pre></div>
 <pre><code>## Time difference of 52.28571 weeks
-## Time difference of 51625 hours</code></pre>
+## Time difference of 51937 hours</code></pre>
 </div>
 <hr />
 <p>The <code>difftime</code> function actually works with timestamps as well, i.e. we don’t necessarily have to work at the date level, we can get information on finer granularity when it comes to time units. We will show this in more detail after we learn the class <code>POSIXct</code>. Also, if we only require a number (of seconds, hours, days, etc.), we can easily transform the <code>difftime</code> output into an integer using the <code>as.numeric</code> function.</p>
@@ -510,16 +516,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## [36] &quot;2027-07-01&quot; &quot;2028-01-01&quot; &quot;2028-07-01&quot; &quot;2029-01-01&quot; &quot;2029-07-01&quot;
 ## [41] &quot;2030-01-01&quot;
 ##    appId surname cleaningDate
-## 1      1   Ebert   2021-01-19
-## 2      2 Ladovac   2021-02-09
-## 3      3   Ceric   2021-03-02
-## 4      4   Dikla   2021-03-23
-## 5      5    Anic   2021-04-13
-## 6      6   Peric   2021-05-04
-## 7      7   Žužic   2021-05-25
-## 8      8   Babic   2021-06-15
-## 9      9   Ibiza   2021-07-06
-## 10    10  Radler   2021-07-27</code></pre>
+## 1      1   Ebert   2021-02-01
+## 2      2 Ladovac   2021-02-22
+## 3      3   Ceric   2021-03-15
+## 4      4   Dikla   2021-04-05
+## 5      5    Anic   2021-04-26
+## 6      6   Peric   2021-05-17
+## 7      7   Žužic   2021-06-07
+## 8      8   Babic   2021-06-28
+## 9      9   Ibiza   2021-07-19
+## 10    10  Radler   2021-08-09</code></pre>
 </div>
 <hr />
 </div>
@@ -547,7 +553,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb396-6"><a href="dates.html#cb396-6"></a><span class="co"># &quot;01-12-2001 14:30&quot; &lt;- timestamp read in New York, USA, EST time zone</span></span>
 <span id="cb396-7"><a href="dates.html#cb396-7"></a><span class="kw">as.POSIXct</span>(<span class="st">&quot;2015-10-28 15:30:42&quot;</span>)</span>
 <span id="cb396-8"><a href="dates.html#cb396-8"></a><span class="kw">as.POSIXct</span>(<span class="st">&quot;01-12-2001 14:30&quot;</span>, <span class="dt">tz =</span> <span class="st">&quot;EST&quot;</span>, <span class="dt">format =</span> <span class="st">&quot;%d-%m-%Y %H:%M&quot;</span>)</span></code></pre></div>
-<pre><code>## [1] &quot;2021-01-19 16:58:07 CET&quot;
+<pre><code>## [1] &quot;2021-02-01 12:37:51 CET&quot;
 ## [1] &quot;2015-10-28 15:30:42 CET&quot;
 ## [1] &quot;2001-12-01 14:30:00 EST&quot;</code></pre>
 </div>
@@ -583,8 +589,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb402-3"><a href="dates.html#cb402-3"></a></span>
 <span id="cb402-4"><a href="dates.html#cb402-4"></a><span class="co"># print out how many hours have passed since midnight 1/1/2015. by far</span></span>
 <span id="cb402-5"><a href="dates.html#cb402-5"></a><span class="kw">difftime</span>(<span class="kw">Sys.time</span>(), <span class="st">&quot;2015-01-01 00:00:00&quot;</span>, <span class="dt">units =</span> <span class="st">&quot;hours&quot;</span>)</span></code></pre></div>
-<pre><code>## [1] &quot;2021-01-19 17:14:48 CET&quot;
-## Time difference of 53056.97 hours</code></pre>
+<pre><code>## [1] &quot;2021-02-01 12:54:31 CET&quot;
+## Time difference of 53364.63 hours</code></pre>
 </div>
 <hr />
 <p>The class <code>POSIXlt</code> is very similar to its compact relative <code>POSIXct</code>. We use the similarly fashioned <code>as.POSIXlt</code> function to create one, however the difference is that we end up with a list which allows us to easily extract certain parameters from a timestamp, such as number of seconds, minutes, day of the week, etc. We can easily see all the elements of the list if we create a <code>POSIXlt</code> object and then call the <code>unclass</code> function on it, which will convert it to an “ordinary” list. We can even go a step further - if we put this list through the <code>unlist</code> function, we get a simple, easily interpretable character vector as a result.</p>
@@ -727,8 +733,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb423-3"><a href="dates.html#cb423-3"></a></span>
 <span id="cb423-4"><a href="dates.html#cb423-4"></a><span class="co"># print the timestamp which happened exactly an hour ago</span></span>
 <span id="cb423-5"><a href="dates.html#cb423-5"></a><span class="kw">now</span>() <span class="op">-</span><span class="st"> </span><span class="dv">60</span> <span class="op">*</span><span class="st"> </span><span class="dv">60</span></span></code></pre></div>
-<pre><code>## [1] &quot;2021-01-20&quot;
-## [1] &quot;2021-01-19 15:58:09 CET&quot;</code></pre>
+<pre><code>## [1] &quot;2021-02-02&quot;
+## [1] &quot;2021-02-01 11:37:53 CET&quot;</code></pre>
 </div>
 <hr />
 <p>We already mentioned that managing time-related data can become very complex, especially considering that time intervals can be expressed generically (e.g., “2 years”) or specifically (the span of two dates), and that mathematical and calendar ways of expressing time intervals do not necessarily match (e.g., “period of one year” can mathematically mean “the exact number of seconds in 365 days” but also the contextually dependent “period until the same date next year”).</p>
@@ -759,7 +765,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb426-9"><a href="dates.html#cb426-9"></a><span class="kw">today</span>() <span class="op">+</span><span class="st"> </span>v</span></code></pre></div>
 <pre><code>## [1] &quot;21d 0H 0M 0S&quot;
 ## [1] &quot;1814400s (~3 weeks)&quot;
-## [1] &quot;2026-04-21&quot;</code></pre>
+## [1] &quot;2026-05-03&quot;</code></pre>
 </div>
 <hr />
 <p>Notice that the above expression would not be consistent if obtained “mathematically”.</p>
@@ -793,8 +799,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb429-14"><a href="dates.html#cb429-14"></a>interval1</span>
 <span id="cb429-15"><a href="dates.html#cb429-15"></a>interval2</span>
 <span id="cb429-16"><a href="dates.html#cb429-16"></a>interval3</span></code></pre></div>
-<pre><code>## [1] 2020-07-19 UTC--2021-07-19 UTC
-## [1] 2021-01-19 UTC--2021-06-11 UTC
+<pre><code>## [1] 2020-08-01 UTC--2021-08-01 UTC
+## [1] 2021-02-01 UTC--2021-06-24 UTC
 ## [1] 2002-05-01 UTC--2002-07-01 UTC</code></pre>
 </div>
 <hr />
@@ -821,7 +827,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb432-6"><a href="dates.html#cb432-6"></a><span class="co"># print out their intersection</span></span>
 <span id="cb432-7"><a href="dates.html#cb432-7"></a><span class="cf">if</span>(<span class="kw">int_overlaps</span>(interval1, interval1)) <span class="kw">intersect</span>(interval1, interval2)</span></code></pre></div>
 <pre><code>## [1] TRUE
-## [1] 2021-01-19 UTC--2021-06-11 UTC</code></pre>
+## [1] 2021-02-01 UTC--2021-06-24 UTC</code></pre>
 </div>
 <hr />
 <p>In this section, we are introduced to some of the functionality offered by the base R’s date and time classes as well as some of the functionalities offered by the <code>lubridate</code> package. For more information, see the official documentation of the R language and the <code>lubridate</code> package, or the article called “Dates and Times Made Easy with lubridate” written by the author of the package Hadley Wickham, available at <a href = "https://www.jstatsoft.org/article/view/v040i03/v40i03.pdf"> this link </a>.</p>
